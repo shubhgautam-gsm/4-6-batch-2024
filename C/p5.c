@@ -12,6 +12,7 @@ int main() {
   multi=a*b;
   divi=a/b;
 
+
   char user;
   printf(" write add | sub | multi | divi");
   scanf("%c", &user); 

@@ -10,6 +10,5 @@ int main() {
   c = a + b;
 
   printf("The value of c is: %f\n", c);  // Use %d to print the value of c
-
   return 0;  // Use return 0 instead of getch()
 }
