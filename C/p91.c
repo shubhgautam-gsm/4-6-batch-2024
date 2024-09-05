@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 int main() {
-  int i = 0;
+  int i;
   
-  while (i <=5) {
+  for (i = 2; i <= 512; i *= 2) {
     printf("%d\n", i);
-    i++;
-  }
+  }    
   
   return 0;
-}   
+}

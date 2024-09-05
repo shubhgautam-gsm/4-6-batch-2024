@@ -14,6 +14,5 @@ int main() {
   } else {
     printf("%s, you are not a valid user.\n", client);
   }
-
   return 0;
 }
