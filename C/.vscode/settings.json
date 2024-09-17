@@ -57,6 +57,8 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "P45.C": "cpp"
+    "*.embeddedhtml": "html",
+    "P45.C": "cpp",
+    "P133.C": "cpp"
   }
 }
