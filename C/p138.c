@@ -30,7 +30,6 @@ int main() {
     else if(strcmp(user,sub)==0){
       printf("The sub is: %d\n", mult(3, 6));
     }
-
     else if(strcmp(user,div)==0){
       printf("The div is: %d\n", div(3, 6));
     }
