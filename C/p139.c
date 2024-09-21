@@ -45,3 +45,38 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+// int val1 = 3, val2 = 6; // Example values, you can change or 
+// char user ='+'; 
+
+// if(user=='+'){
+//  void add(int val1, int val2) {
+//    int addi=val1 + val2;
+//    printf("add is %d",addi);
+//  }
+//  add(val1,val2);
+// }
+
+// else if(user=='-'){
+//   void sub(int val1, int val2) {
+//    int subi=val1 - val2;
+//      printf("sub is %d",subi);
+//  }
+//  sub(val1,val2);
+// }
+
+// else{
+//       printf("invalid");
+// }
+//     return 0;
+// }
