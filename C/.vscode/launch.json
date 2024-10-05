@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "6.3.0",
   "configurations": [
     {
       "name": "C/C++ Runner: Debug Session",
@@ -9,9 +9,9 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "d:/4-6-batch-2024/C",
-      "program": "d:/4-6-batch-2024/C/build/Debug/outDebug",
+      "program": "C:/MinGW/bin/gdb.exe",
       "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
+      "miDebuggerPath": "C:/MinGW/bin/gdb.exe", // Adjust path to gdb if necessary
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",

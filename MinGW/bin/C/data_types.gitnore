@@ -1,0 +1,9 @@
+
+    int - stores integers (whole numbers), without decimals, such as 123 or -123
+    float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+    char - stores single characters, such as 'a' or 'B'. Characters are surrounded by single quotes
+
+There are two types of conversion in C:
+
+    Implicit Conversion (automatically)
+    Explicit Conversion (manually)
