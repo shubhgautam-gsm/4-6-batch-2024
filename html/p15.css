@@ -1,0 +1,28 @@
+ 
+        .h1{
+            background-color: #393d3d;
+            font-family: cursive;
+            color: aliceblue;
+        }
+        .h2{
+            background-color: rgb(210, 190, 58);
+            font-family: cursive;
+        }
+        .h3{
+            background-color: rgb(233, 27, 171);
+            font-family: cursive;
+     
+        }
+        .h4{
+            background-color: rgb(13, 82, 93);
+            font-family: cursive;
+        }
+        .h5{
+            background-color: rgb(253, 11, 11);
+            font-family: cursive;
+        }        /* xxxx */
+        .h6{
+            text-align: left;
+        }
+        .s1{font-size: 500%;}
+        .s2{text-align: justify;margin-left: 10px;margin-right: 10px;}
