@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mycontainer {
+            display: flex;
+            padding: 10px;
+            border: 2px solid green;
+          }
+         /*  
+           .mycontainer  div{
+           width: 33%;
+           border: 2px solid green;
+        }
+         .mycontainer  div means <div> child <div> and sub-child <div> */
+        .mycontainer > div{
+            width: 33%;
+           border: 2px solid green;
+        }
+       /* .mycontainer > div means <div> child only and not sub child <div> */
+    </style>
+</head>
+<body>
+    <div class="mycontainer">
+
+        <div style="background-color:#FFF4A3;">
+          <div>London</div>
+          <div>London is the capital city of England.</div>
+          <div>London has over 13 million inhabitants.</div>
+        </div>
+        
+        <div style="background-color:#FFC0C7;">
+          <h2>Oslo</h2>
+          <p>Oslo is the capital city of Norway.</p>
+          <p>Oslo has over 600.000 inhabitants.</p>
+        </div>
+        
+        <div style="background-color:#D9EEE1;">
+          <h2>Rome</h2>
+          <p>Rome is the capital city of Italy.</p>
+          <p>Rome has almost 3 million.</p>
+        </div>
+      
+      </div>
+      <div>
+        <div style="background-color:#D9EEE1;">
+            <h2>juliet</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million.</p>
+          </div>
+      </div>
+</body>
+</html>

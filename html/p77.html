@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- internal css -->
+    <style>
+        .city > div {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 10px 12px 3px rgb(46, 45, 45);
+            display: inline-block;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+        }
+        img{
+            height: 300px ;
+            width: 200px;
+            /*width: 200px !important;*/
+        }
+      /* i overide above if i am out of comment   img{
+            height: 200px;
+            width: 1000px;
+        }*/
+    </style>
+    <!-- external css -->
+    <link rel="stylesheet" href="./p15.css">
+</head>
+
+<body>
+    <div class="city">
+        <div>
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+            <img src="../imgs/cup.jpg" alt="">
+        </div>
+
+        <div>
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+            <img src="../imgs/iphone.jpg" alt="">
+        </div>
+
+        <div>
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+            <img src="../imgs/ironman.jpg" alt="">
+        </div>
+    </div>
+    <div>
+        <!-- internal(2/3) vs inline(1) vs external(2/3) css   -->
+
+        <!-- <img src="../imgs/lap2.jpg" alt="" style="width: 1200px;"> -->
+        <img src="../imgs/lap2.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

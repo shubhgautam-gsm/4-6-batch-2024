@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">hello world</p>
+
+    <!-- <button onclick="document.getElementById('demo').style.backgroundColor='red';
+    document.getElementById('demo').style.color='white'">click</button> -->
+    <button onclick="color()">click</button>
+
+    
+    <script>
+        /*function color() {
+            document.getElementById('demo').style.backgroundColor = 'red';
+            document.getElementById('demo').style.color = 'white'
+            document.getElementById('demo').style.fontFamily = 'cursive'
+        }*/
+        function color() {
+            let x = document.getElementById('demo').style 
+            x.backgroundColor = 'red';
+            x.color = 'white'
+            x.fontFamily = 'cursive'
+        }
+     
+     
+    </script>
+</body>
+
+</html>

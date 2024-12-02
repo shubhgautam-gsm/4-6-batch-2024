@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="demo">hello world</p>
+    <p class="demo">hello world</p>
+    <p class="demo">hello world</p>
+    <p class="demo">hello world</p>
+    <p class="demo">hello world</p>
+    <p class="demo">hello world</p>
+    <p class="demo">hello world</p>
+
+    <!-- <button onclick="document.getElementById('demo').style.backgroundColor='red';
+    document.getElementById('demo').style.color='white'">click</button> -->
+    <button onclick="color()">click</button>
+
+    <script>
+        function color() {
+            for(var i=0; i<=5;i++)
+            document.getElementsByClassName('demo')[i].style.backgroundColor = 'red';
+    
+        }
+    </script>
+
+<!--         
+    <script>
+        function color() {
+            document.getElementsByClassName('demo')[0].style.backgroundColor = 'red';
+            document.getElementsByClassName('demo')[1].style.backgroundColor = 'yellow';
+            document.getElementsByClassName('demo')[2].style.backgroundColor = 'green';
+        }
+    </script> -->
+<!-- 
+    <script>
+        function color() {
+            document.getElementById('demo')[0].style.backgroundColor = 'red';
+            document.getElementById('demo')[1].style.backgroundColor = 'red';
+            document.getElementById('demo')[2].style.backgroundColor = 'red';
+            document.getElementById('demo').style.color = 'white'
+        }
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int per() {
+    int n, i;
+    return n + i;
+}
+
+int main() {
+  cout << 3.3<<"\n\n\n";
+  cout << per()<<"\n";
+  return 0;
+}

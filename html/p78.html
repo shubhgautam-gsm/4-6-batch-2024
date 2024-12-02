@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- internal css -->
+    <style>
+        .city{
+            margin-top: 50px;
+        }
+        .city > div {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 10px 12px 3px rgb(46, 45, 45);
+            display: inline-block;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+        }
+        .city > div:hover{
+            height: 500px;
+            width: 400px; 
+        }
+        .city > div > h3:hover{
+            height: 500px;
+            width: 400px;
+            color: black;
+            font-size: 160%; 
+            text-shadow:2px 3px 6px rgb(10, 62, 219), 1px 1px 12px rgb(255, 190, 24),2px 3px 16px rgb(196, 245, 3);
+        }
+        h2{
+            font-family: cursive;
+           text-shadow:2px 3px 6px rgb(12, 13, 9), 1px 1px 12px rgb(255, 190, 24),2px 3px 16px rgb(196, 245, 3);
+        }
+        h2:hover{
+            font-size: 170%;
+        }
+        img{
+            height: 50% ;
+            width: 100%;
+            /*width: 200px !important;*/
+        }
+      /* i overide above if i am out of comment   img{
+            height: 200px;
+            width: 1000px;
+        }*/
+    </style>
+    <!-- external css -->
+
+</head>
+
+<body>
+    <div class="city">
+        <div>
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+            <img src="../imgs/cup.jpg" alt="">
+            <h3>4000$</h3>
+        </div>
+
+        <div>
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+            <img src="../imgs/iphone.jpg" alt="">
+            <h3>4000$</h3>
+        </div>
+
+        <div>
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+            <img src="../imgs/ironman.jpg" alt="">
+            <h3>4000$</h3>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
