@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images with Max-Width</title>
+</head>
+
+<body>
+    <h2>Show Different Images Depending on Browser Width</h2>
+    <p>Resize the browser window to see the image change at 800px, 1000px, 1200px, and 1300px.</p>
+
+    <picture>
+        <source srcset="./imgs/lap2.jpg" media="(max-width: 800px)">
+        <source srcset="./imgs/lap1.jpg" media="(max-width: 1000px)">
+        <source srcset="./imgs/bahu.jpeg" media="(max-width: 1200px)">
+        <source srcset="./imgs/ironman.jpg" media="(max-width: 1300px)">
+        <img src="./imgs/iphone.jpg" alt="Default Image" style="width:auto;">
+    </picture>
+</body>
+
+</html>

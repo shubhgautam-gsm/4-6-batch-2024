@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <style>
+    #myImage{
+      border-radius: 30%;
+      opacity: 0.5;
+    }
+  </style>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+
+
+<img id="myImage" src="../imgs/ironman.jpg" width="100" height="180">
+<!-- <img id="myImage" src="../../../2_4_batch-2024/css/imgs/items.jpg" width="100" height="180"> -->
+
+<button onclick="evnt(0)">click</button>
+<button onclick="evnt(1)">click</button>
+</body>
+<h1>
+  javascript manipulate(change) html/css code 
+</h1>
+<script>
+  function evnt(ss){
+    let x=document.getElementById('myImage')
+    if(ss==0){
+      x.src = "../imgs/bahu.jpeg";
+    }else{
+     x.src = "../imgs/ironman.jpg";
+    }
+
+  }
+//  function evnt2(){
+//   document.getElementById('myImage').src = "../imgs/ironman.jpg";
+//  }
+
+  </script>
+</html>
+

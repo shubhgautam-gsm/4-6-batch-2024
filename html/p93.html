@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <h2>Show Different Images Depending on Browser Width</h2>
+    <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+    <picture>
+        <source srcset="./imgs/ironman.jpg" media="(min-width: 1300px)">
+        <source srcset="./imgs/bahu.jpeg" media="(min-width: 1200px)">
+        <source srcset="./imgs/lap1.jpg" media="(min-width: 1000px)">
+        <source srcset="./imgs/lap2.jpg" media="(min-width: 800px)">
+        <img src="./imgs/iphone.jpg   " alt="Flowers" style="width:auto;">
+    </picture>
+
+</body>
+
+</html>
