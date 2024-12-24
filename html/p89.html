@@ -29,6 +29,7 @@ nav {
   height: 300px; /* only for demonstration, should be removed */
   background: #ccc;
   padding: 20px;
+  border:2px solid red;
 }
 
 /* Style the list inside the menu */
@@ -43,15 +44,20 @@ article {
   width: 70%;
   background-color: #f1f1f1;
   height: 300px; /* only for demonstration, should be removed */
+  border:2px solid red;
 }
 
 /* Clear floats after the columns */
-section::after {
+section::after{
+
   content: "";
   display: table;
   clear: both;
+  
 }
-
+section{
+  height: 600px;
+}
 /* Style the footer */
 footer {
   background-color: #777;
@@ -62,13 +68,14 @@ footer {
 @media (max-width: 1000px) {
   nav, article {
     width: 25%;
-    height: auto;
+
+    
   }
 }
 @media (max-width: 800px) {
   nav, article {
     width: 50%;
-    height: auto;
+ 
   }
 }
 
@@ -110,6 +117,19 @@ border: 2px solid black;
   <article>
     <h1>London</h1>
     <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+  <nav>
+    <ul>
+      <li><a href="#">Bristol</a></li>
+      <li><a href="#">Rajsthan</a></li>
+      <li><a href="#">Punjab</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>BRISTOL</h1>
+    <p>Bristol is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
   </article>
 </section>
