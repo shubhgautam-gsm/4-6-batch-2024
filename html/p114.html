@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
-<body>
-<style>
-/*    #myCanvas2 {
-        background-color: #dd9b28;
-    } */
-</style>
 
-<div  width="200" height="100" style="border:1px solid #dd9b28;">
-Your browser does not support the HTML canvas tag.</div>
-<div id="myCanvas2" width="200" height="100" style="border:1px solid #dd9b28;">
-    Your browser does not support the HTML canvas tag.</div>
-<div  width="200" height="100" style="border:1px solid #dd9b28;">
+<body>
+    <style>
+        /* #myCanvas2 {
+        background-color: #dd9b28;
+        color: aliceblue;
+        font-family: cursive;
+    } */
+    </style>
+    <button onclick="chg()">click</button>
+    <div width="200" height="100" style="border:1px solid #dd9b28;">
+        Your browser does not support the HTML canvas tag.</div>
+    <div id="myCanvas2" width="200" height="100" style="border:1px solid #dd9b28;">
+        Your browser does not support the HTML canvas tag.</div>
+    <div width="200" height="100" style="border:1px solid #dd9b28;">
         Your browser does not support the HTML canvas tag.</div>
 
-
-<!-- 
+    <!-- 
 <script>
     document.getElementById("myCanvas2").style.backgroundColor='red';
     document.getElementById("myCanvas2").style.color='purple';
-    document.getElementById("myCanvas2").style.fontFamily='cursive';
-    
+    document.getElementById("myCanvas2").style.fontFamily='cursive';  
 </script> -->
 
-<script>
-    var c = document.getElementById("myCanvas2").style
-
-    c.backgroundColor='red';
-    c.color='purple';
-    c.fontFamily='cursive';
-    
-</script>
+    <script>
+        function chg() {
+            var c = document.getElementById("myCanvas2").style
+            c.backgroundColor = 'red';
+            c.color = 'purple';
+            c.fontFamily = 'cursive';
+            
+            var d = document.getElementById("myCanvas2")
+            d.innerHTML='hahahaha';
+        }
+    </script>
 
 
 
 </body>
+
 </html>
 <!-- var c = document.getElementById("myCanvas");
 var ctx =   c.getContext("2d");

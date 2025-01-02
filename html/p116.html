@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Paths</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // First shape
+        ctx.beginPath();
+        ctx.arc(50, 50, 30, 0, 2 * Math.PI); // Circle
+        ctx.stroke();
+
+        // Second shape
+        ctx.beginPath(); // Start a new path
+        ctx.rect(100, 20, 50, 50); // Rectangle
+        ctx.stroke();
+        
+    </script>
+</body>
+</html>
