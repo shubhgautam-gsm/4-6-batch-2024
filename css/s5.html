@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; /* Loops infinitely */
+  border-radius: 20px;
+}
+
+@keyframes example {
+  0%   {background-color: rgb(255, 0, 0); width: 30%;}
+  2%   {background-color: #ffa500; width: 29%;}
+  4%   {background-color: hsl(60, 100%, 50%); width: 28%;}
+  6%   {background-color: lime; width: 27%;}
+  8%   {background-color: green; width: 26%;}
+  10%  {background-color: teal; width: 25%;}
+  12%  {background-color: cyan; width: 24%;}
+  14%  {background-color: skyblue; width: 23%;}
+  16%  {background-color: blue; width: 22%;}
+  18%  {background-color: indigo; width: 21%;}
+  20%  {background-color: violet; width: 20%;}
+  22%  {background-color: purple; width: 19.5%;}
+  24%  {background-color: magenta; width: 19%;}
+  26%  {background-color: pink; width: 18.5%;}
+  28%  {background-color: coral; width: 18.3%;}
+  30%  {background-color: crimson; width: 18%;}
+  /* Add more colors as needed */
+  100% {background-color: red; width: 15%;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation with Unique Colors</h1>
+
+<div></div>
+
+<p><b>Note:</b> Each frame changes the background color to a unique value.</p>
+
+</body>
+</html>
