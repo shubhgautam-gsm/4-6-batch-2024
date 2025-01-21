@@ -1,0 +1,122 @@
+1. & (AND):
+
+    Operation: Takes two binary numbers and performs a logical AND operation on each bit.
+    Truth Table:
+        1 & 1 = 1
+        1 & 0 = 0
+        0 & 0 = 0
+    Example:
+        5 in binary: 0101
+        1 in binary: 0001
+        Perform 0101 & 0001:
+
+        0101
+        & 0001
+        -----
+        0001
+
+        Result: 1 (decimal)
+
+2. | (OR):
+
+    Operation: Takes two binary numbers and performs a logical OR operation on each bit.
+    Truth Table:
+        1 | 1 = 1
+        1 | 0 = 1
+        0 | 0 = 0
+    Example:
+        5 in binary: 0101
+        1 in binary: 0001
+        Perform 0101 | 0001:
+
+        0101
+        | 0001
+        -----
+        0101
+
+        Result: 5 (decimal)
+
+3. ~ (NOT):
+
+    Operation: Flips all the bits in the binary representation (0 becomes 1, 1 becomes 0).
+    Note: The result in many programming languages (e.g., Java) is calculated as the bitwise complement of the number, which also considers the signed integer representation (two's complement form).
+    Example:
+        5 in binary: 0101
+        Perform ~0101:
+
+        ~0101 = 1010 (flipped bits)
+
+        In signed 4-bit representation, ~5 becomes -6 because of two's complement. However, for unsigned contexts:
+            Result: 10 (binary 1010).
+
+4. ^ (XOR):
+
+    Operation: Takes two binary numbers and performs an exclusive OR (XOR) operation on each bit.
+    Truth Table:
+        1 ^ 1 = 0
+        1 ^ 0 = 1
+        0 ^ 0 = 0
+    Example:
+        5 in binary: 0101
+        1 in binary: 0001
+        Perform 0101 ^ 0001:
+
+        0101
+        ^ 0001
+        -----
+        0100
+
+        Result: 4 (decimal)
+
+5. << (Left Shift):
+
+    Operation: Shifts all bits to the left by a specified number of positions, filling in zeros on the right.
+    Example:
+        5 in binary: 0101
+        Perform 0101 << 1:
+
+        0101 (original)
+        1010 (shifted left by 1)
+
+        Result: 10 (decimal)
+
+6. >> (Right Shift):
+
+    Operation: Shifts all bits to the right by a specified number of positions.
+    Behavior:
+        For signed numbers: Fills the leftmost bits with the sign bit (arithmetic shift).
+    Example:
+        5 in binary: 0101
+        Perform 0101 >> 1:
+
+        0101 (original)
+        0010 (shifted right by 1)
+
+        Result: 2 (decimal)
+
+7. >>> (Unsigned Right Shift):
+
+    Operation: Shifts all bits to the right by a specified number of positions, filling in zeros on the left.
+    Behavior:
+        Only available in some programming languages (e.g., Java, JavaScript).
+        Used for unsigned numbers or when treating the number as unsigned.
+    Example:
+        5 in binary: 0101
+        Perform 0101 >>> 1:
+
+        0101 (original)
+        0010 (unsigned right shift by 1)
+
+        Result: 2 (decimal)
+
+Summary of Results:
+Operator	Operation	Example	Binary Result	Decimal Result
+&	AND	5 & 1	0001	1
+`	`	OR	`5	1`
+~	NOT	~5	1010	10
+^	XOR	5 ^ 1	0100	4
+<<	Left Shift	5 << 1	1010	10
+>>	Right Shift	5 >> 1	0010	2
+>>>	Unsigned Right Shift	5 >>> 1	0010	2
+
+Let me know if you'd like further clarification!

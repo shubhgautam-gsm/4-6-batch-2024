@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function getRandomColor() {
+            // Generate random RGB values
+            let r = Math.floor(Math.random() * 256); // Random value between 0-255
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            return `rgb(${r},${g},${b})`;
+        }
+       
+        function myFunction() {
+            let x = document.getElementsByClassName("demo");
+
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.color = getRandomColor(); // Assign a random color to each element
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Demo JavaScript with Random Colors</h2>
+
+    <p class="demo">This is a paragraph.</p>
+    <p class="demo">This is another paragraph.</p>
+    <p class="demo">Paragraph with random color.</p>
+    <p class="demo">Yet another paragraph.</p>
+    <p class="demo">Another one!</p>
+    <p class="demo">Random colors everywhere!</p>
+    <p class="demo">Colors make it better.</p>
+
+    <button type="button" onclick="myFunction()">Change Colors</button>
+</body>
+
+</html>
+
+<!-- 
+
+FLOOR 
+CEIL -->
