@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style></style>
+</head>
+
+<body>
+    <!-- changes/manipulate Html code -->
+    <h2>Demo JavaScript in Head</h2>
+
+    <p class="demo">A Paragraph.</p>
+    <p class="demo">A Paragraph.</p>
+    <p class="demo">A Paragraph.</p>
+    <p class="demo">A Paragraph.</p>
+    <p class="demo">A Paragraph.</p>
+    <p class="demo">A Paragraph.</p>
+    <p class="demo">A Paragraph.</p>
+
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+
+    <form action="/action_page.php" method="get">
+        <label for="vol">Volume (between 0 and 6):</label>
+        <!-- <input type="range" id="vol" name="vol" min="0" max="6"> -->
+        <input type="text" id="vol" name="vol" min="0" max="6" placeholder="STARTING VALUE">
+        <input type="text" id="vol2" name="vol" min="0" max="6" placeholder="ENDING VALUE">
+        <!-- <input type="text" id="vol3" placeholder="WRITE COLOR"> -->
+      </form>
+      
+
+    <script>
+        // SMART WORK 1
+        function myFunction() {
+            let x = document.getElementsByClassName("demo")
+
+            let start = document.getElementById("vol").value
+            
+            let end = document.getElementById("vol2").value
+            
+           // let user_choose =document.getElementById("vol3").value
+          //  let user_choose =prompt('write color name:')
+
+            for (let i = start; i <= end ; i++) {
+                let user_choose =prompt('write color name:') // repeat asking choice
+                // DYANMIC CODE
+                x[i].style.color = user_choose;
+                //      x[i].style.color = "rgb(255,255,255)
+            }
+        }
+
+    </script> 
+
+
+</html>
+
+<!-- jay-meet  meet-ram shyam-jay  -->
