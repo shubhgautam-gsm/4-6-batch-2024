@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table,td{
+            border: 2px solid black;
+        }
+        img{
+            width:500px;
+            height:600px;
+        }
+    </style>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Laptop</th>
+        <th>Mouse</th>
+        <th>Keyboard</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td id="demo1"></td>
+        <td id="demo2"></td>
+        <td id="demo3"></td>
+    </tr>
+</table>
+
+<!-- <p id="demo1"></p> -->
+<!-- <button onclick="laptop()">click me</button> -->
+<script>
+//alert(Date());
+alert(laptop());
+
+function laptop() {
+    document.getElementById('demo1').innerHTML= `<img src='../imgs/items.jpg'>`;
+    document.getElementById('demo2').innerHTML= `<img src='../imgs/iphone.jpg'>`;
+    document.getElementById('demo3').innerHTML= `<img src='../imgs/cup.jpg'>`;
+}
+</script>
+
+</body>
+</html> 
