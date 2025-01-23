@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <!-- <button onclick="laptop()">click me</button> -->
+    <script>
+        // models of percentage program
+       let maths,sci,guj;
+
+       //let user =prompt("Enter your name") + '___';
+       let user =prompt("Enter your name");
+       //let maths = prompt('enter maths marks'); 
+       maths=33,sci=66,guj=99
+       let stud1= document.getElementById("demo1").innerHTML = user + ' percentage is ' + ( maths + sci + guj ) / 3
+       
+       let user2 =prompt("Enter your name"); 
+       maths=56,sci=93,guj=97
+       let stud2= document.getElementById("demo2").innerHTML =user2 + ' percentage is ' + ( maths + sci + guj ) / 3
+       
+       let user3 =prompt("Enter your name");
+       maths=63,sci=66,guj=99
+       let stud3= document.getElementById("demo3").innerHTML = user3 + ' percentage is ' + ( maths + sci + guj ) / 3
+       
+       let user4 =prompt("Enter your name");
+       maths=96,sci=93,guj=97
+       let stud4= document.getElementById("demo4").innerHTML =user4 + ' percentage is ' + ( maths + sci + guj ) / 3
+    </script>
+
+</body>
+
+</html>

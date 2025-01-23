@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        JavaScript Can Change HTML Content
+    </h1>
+    <button onclick="bulbon()">on</button>
+    <button onclick="bulboff()">off</button>
+    <img src="./images/faceonmoon.jpeg" alt="" id="demo">
+</body>
+<script>
+   function bulbon(){ 
+        document.getElementById('demo').src="./images/fs.jpeg"
+    }
+    function bulboff(){ 
+        document.getElementById('demo').src="./images/faceonmoon.jpeg"
+    }
+</script>
+</html>

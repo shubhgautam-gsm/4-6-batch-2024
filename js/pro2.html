@@ -9,16 +9,18 @@
     <h1>
         JavaScript Can Change HTML Content
     </h1>
+    <!-- <button onmouseleave="bulbon()">on</button> -->
     <button onclick="bulbon()">on</button>
     <button onclick="bulboff()">off</button>
     <img src="./images/pic_bulboff.gif" alt="" id="demo">
 </body>
 <script>
-   function bulbon(){ 
+        function bulbon(){
         document.getElementById('demo').src="./images/pic_bulbon.gif"
-    }
-    function bulboff(){ 
-        document.getElementById('demo').src="./images/pic_bulboff.gif"
-    }
-</script>
+        }
+        function bulboff(){
+            document.getElementById('demo').src="./images/pic_bulboff.gif"
+            }
+        // when call func bulbon() then only change img src
+</script>s
 </html>

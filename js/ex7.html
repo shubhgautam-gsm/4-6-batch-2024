@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <!-- <button onclick="laptop()">click me</button> -->
+    <script>
+        // models of percentage program
+
+
+        let maths,sci,guj;
+
+        function find_percentage(maths,sci,guj){
+            return (maths+sci+guj)/3
+        }
+        stud1=find_percentage(44,66,88)
+        stud2=find_percentage(55,55,56)
+        stud3=find_percentage(44,33,42)
+        stud4=find_percentage(77,78,79)
+        
+        document.getElementById("demo1").innerHTML = "Student 1 : " + stud1+"%";
+        document.getElementById("demo2").innerHTML = "Student 2 : " + stud2+"%";
+        document.getElementById("demo3").innerHTML = "Student 3 : " + stud3+"%";
+        document.getElementById("demo4").innerHTML = "Student 4 : " + stud4+"%";
+    </script>
+
+</body>
+
+</html>

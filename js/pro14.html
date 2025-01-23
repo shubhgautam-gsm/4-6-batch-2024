@@ -5,14 +5,20 @@
 <h2>My First Web Page</h2>
 <p>My first paragraph.</p>
     
-<p id="demo1"></p>
-<!-- <button onclick="laptop()">click me</button> -->
+<!-- <p id="demo1">
+    <img src='../imgs/items.jpg'>
+</p> -->
+
+<p id="demo1">
+
+</p>
+<button onclick="laptop()">click me</button>
 <script>
 //alert(Date());
-alert(laptop());
+//alert(laptop());
 
 function laptop() {
-    return document.getElementById('demo1').innerHTML= `<img src='../imgs/items.jpg'>`;
+     document.getElementById('demo1').innerHTML= `<img src='../imgs/items.jpg'>`;
 }
 </script>
 
