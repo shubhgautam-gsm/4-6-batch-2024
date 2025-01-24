@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, x, y, and z are undeclared.</p>
+    <p>They are automatically declared when first used.</p>
+
+    <p id="demo">demo1</p>
+    <p id="demo2">demo2</p>
+    <script>
+
+
+       try{
+        x = 5
+        y = 6
+        document.getElementById("demo").innerHTML = x + y;// stop
+       }
+       catch(err){
+        console.log('cannot use variable without initialization');
+       }
+        document.getElementById("demo2").innerHTML = 'hello 2025';
+
+        let x, y;
+    </script>
+
+</body>
+
+</html>
