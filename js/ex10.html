@@ -5,10 +5,10 @@
     <h2>My First Web Page</h2>
     <p>My first paragraph.</p>
 
-    <p id="demo1"></p>
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-    <p id="demo4"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
 
     <script>
         // Function to calculate percentage
@@ -21,15 +21,13 @@
 //66.639   
         // Calculate percentages for four students
         let stud1 = find_percentage();
+        document.getElementsByClassName("demo")[0].innerHTML = "Student 1: " + stud1 + "%";
         let stud2 = find_percentage();
+        document.getElementsByClassName("demo")[1].innerHTML = "Student 2: " + stud2 + "%";
         let stud3 = find_percentage();
+        document.getElementsByClassName("demo")[2].innerHTML = "Student 3: " + stud3 + "%";
         let stud4 = find_percentage();
-
-        // Display the results
-        document.getElementById("demo1").innerHTML = "Student 1: " + stud1 + "%";
-        document.getElementById("demo2").innerHTML = "Student 2: " + stud2 + "%";
-        document.getElementById("demo3").innerHTML = "Student 3: " + stud3 + "%";
-        document.getElementById("demo4").innerHTML = "Student 4: " + stud4 + "%";
+        document.getElementsByClassName("demo")[3].innerHTML = "Student 4: " + stud4 + "%";
     </script>
 
 </body>

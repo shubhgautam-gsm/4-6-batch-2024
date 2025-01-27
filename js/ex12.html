@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+
+    <script>
+        // Function to calculate percentage
+        function find_percentage() {
+            let maths = Number(prompt('Enter Maths marks:'));
+            let sci = Number(prompt('Enter Science marks:'));
+            let guj = Number(prompt('Enter Gujarati marks:'));
+            return ((maths + sci + guj) / 3).toFixed(2); // Round to 2 decimal places
+        }
+//66.639   
+        // Calculate percentages for four students
+      
+
+        for (let i = 0; i <=3;i++){
+            let stud = find_percentage();
+            document.getElementsByClassName("demo")[i].innerHTML = "Student : " + stud + "%";
+        }
+    </script>
+
+</body>
+</html>
