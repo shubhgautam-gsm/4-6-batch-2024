@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="car"></h1>
+</body>
+<script>
+    const Cars={
+                brand:'tata',
+                name:'nano',
+                price:'100000'
+            }
+   
+
+    Cars.color='green'
+    Cars.tyre='mrf'
+    Cars.brand='Tata'
+    
+    document.getElementById('car').innerHTML =
+      'car brand is '+ Cars.brand
+     +'<br>name is '+Cars.name
+     +'<br>price is '+ Cars.price
+     +'<br>color is '+Cars.color
+
+    console.log(Cars)
+</script>
+</html>
