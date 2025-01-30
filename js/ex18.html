@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+        <style>
+     .s1{
+                border:2px dashed blue;
+            };
+        </style>
+    </head>
+
+<body>
+
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Arithmetic Operations</h2>
+    <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+
+    <p id="demo" class='border-5  bg-danger  s1'></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script src="./Divs_Maths.js"></script>
+    <script>
+        //string
+        let a =parseFloat(prompt('Please enter first value'));
+        let x = parseFloat(prompt('please enter second value'));
+        let p=a,q=x,r=a
+        document.getElementById("demo").innerHTML = JODO(a,x,2);
+        document.getElementById("demo2").innerHTML = takavari(p,q,r).toFixed(2)+'%';
+        document.getElementById("demo3").innerHTML =gamti(x,a);
+        // 4 x 4 x 4 'a'
+        // 2 x 2 x 2 x 2 = 4 x 4 =16
+    </script>
+
+</body>
+
+</html>
