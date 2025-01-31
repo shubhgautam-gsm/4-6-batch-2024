@@ -62,19 +62,18 @@
 
 <script>
     let x = document.getElementsByClassName("demo2")
-    let i=prompt('enter your start number')
-    let j=prompt('enter your end number')
+    let i=parseInt(prompt('enter your start number'))
+    let j=parseInt(prompt('enter your end number'))
     if(i>=0 && j<x.length) {
     //if(i==0 && j==x.length) {
        for(i;i<=j;i++){
         let name =prompt('write text')
         x[i].innerHTML = name 
     }
-    
+
 }
 </script>
-
-
+ 
 
 
 </html>
