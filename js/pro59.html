@@ -5,8 +5,8 @@
 
 <p>Call a function which performs a calculation and returns the result:</p>
 
-<p id="demo"></p>
-<p id="demo2"></p>
+<div id="demo">33</div>
+
 
 <script>
 
@@ -17,8 +17,7 @@ function Multi(num1, num2) {
 let result1 =Multi(4, 3);
 let result2 = Multi(6, 9);
 
-document.getElementById("demo").innerHTML = result1;
-document.getElementById("demo2").innerHTML = result2;
+document.getElementById("demo").innerHTML +=`<br>${result1}<br>${result2} `;
 
 </script>
 <!-- a=5000

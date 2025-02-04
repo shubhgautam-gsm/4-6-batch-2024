@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Functions</h1>
+
+    <p>Call a function which performs a calculation and returns the result:</p>
+
+    <p id="demo"></p>
+    <!-- 
+<script>
+let user =prompt('Write Stud Name:');
+let danish = Percentage(44, 37);
+let user2 =prompt('Write Stud Name:');
+let divyang = Percentage(45, 43);
+document.getElementById("demo").innerHTML =
+user + danish+'%' +' ' +user2+ divyang+'%';
+
+function Percentage(a, b) {
+  return (a+b);
+}
+</script> -->
+
+    <!-- <script>
+    let user =prompt('Write Stud Name:');
+    let danish =user + Percentage(44, 37);
+
+    let user2 =prompt('Write Stud Name:');
+    let divyang =user + Percentage(45, 43);
+    
+    document.getElementById("demo").innerHTML =
+    danish+'%' + ' ' +divyang+'%';
+    
+    function Percentage(a, b) {
+      return (a+b);
+    }
+    </script> -->
+
+    <!-- <script>
+        
+        let danish =prompt('Write Stud Name:') + Percentage(44, 37);
+    
+        let divyang =prompt('Write Stud Name:') + Percentage(45, 43);
+        
+        document.getElementById("demo").innerHTML =
+        danish+'%' + ' ' +divyang+'%';
+        
+        function Percentage(a, b) {
+          return (a+b);
+        }
+        </script> -->
+
+
+    <script>
+
+        let danish = user() +' '+ Percentage(44, 37);
+        let divyang = user() +' '+ Percentage(45, 43);
+
+        document.getElementById("demo").innerHTML =`${danish}% ${divyang}%`;
+
+        function Percentage(a, b) {
+            return (a + b);
+        }
+        function user() {
+            return prompt('Write Stud Name:');
+        }
+        
+    </script>
+</body>
+
+</html>
