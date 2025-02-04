@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo"> <b>hello</b>
+    </h1>
+    <form  action="pro8.html" target="_blank">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="em" required>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pss" required>
+
+        <button onclick="chk()">CLICK</button>
+      
+    </form>
+</body>
+<script>
+
+    function chk(){
+    email=document.getElementById("email").value;
+    pass=document.getElementById("pass").value;
+
+    
+    if (email == 'abc@example.com' && pass == '123abc'){
+        document.getElementById("demo").innerHTML = "Login Successful!";
+        console.log('login successful');
+        document.getElementsByTagName('form')[0].innerHTML =' '
+    }
+    else{
+        console.log('login failed');
+    }
+}
+</script>
+
+</html>
+

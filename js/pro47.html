@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+        
+            border-bottom:2px solid #030202;
+            border-spacing: 10px;
+            margin:0 10px 100px 10px;
+        }
+    </style>
+</head>
+<body>
+    <table id="addproduct">
+        <tr><th>CATEGORY</th><th>PRODUCT NAME</th><th>PRICE</th></tr>
+        <!-- <tr><td>Electronics</td><td>Samsung Galaxy S21 Ultra</td><td>$1000</td></tr> -->
+        
+    </table>
+
+
+    <form action="" target="_blank">
+        <label for="category">Category:</label>
+            <input type="text" id="category" name="category">
+        <label for="product">Product Name:</label>
+        <input type="text" id="product" name="product">
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price">
+        <button onclick="addProduct()">Add Product</button>
+    </form>
+
+</body>
+<script>
+function addProduct(){
+
+
+    var category = document.getElementById("category").value;
+    var product = document.getElementById("product").value;
+    var price = document.getElementById("price").value;
+
+
+
+    document.getElementById('addproduct').innerHTML+=`
+    <tr>
+        <td>${category}</td>
+        <td>${product}</td>
+        <td>${price}</td>
+    </tr>`
+    //var newRow = document.createElement("tr");
+    //newRow.innerHTML = "<td>" + category + "</td><td>" + product + "</td><td>" + price + "</td>";
+
+}
+</script>
+</html>
+<!-- a=5000
+a=a+500
+a=a+500
+
+a+=500
+
+print(a) -->
