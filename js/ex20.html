@@ -9,11 +9,16 @@
   <p id="demo"></p>
 
   <script>
-    function toCelsius(f) {
-      return (5 / 9) * (f - 32);
+    let name=prompt("Enter name:").toLowerCase();
+
+    function User(f) {
+      return f;
     }
 
-    console.log(toCelsius().toFixed(2));
+    if(name=='jay'){
+        console.log('welcome user ' + User(name));
+    }
+
   </script>
   <!-- area =2h+2w -->
 

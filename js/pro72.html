@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object Properties</h1>
+<h2>Adding a new Property</h2>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+//const PI=3.14;
+//PI=3.16
+//person = {
+//    firstname: "meet",
+  //  lastname: "Does",
+    //age: 520,
+   // eyecolor: "balue"
+ // };
+
+person.nationality = "English";
+
+
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.nationality + ".";
+
+console.log(person)
+
+</script>
+
+</body>
+</html>
