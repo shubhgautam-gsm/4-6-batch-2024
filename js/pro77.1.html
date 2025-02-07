@@ -7,35 +7,49 @@
 
 <p id="demo"></p>
 <p id="demo2"></p>
-
+<p id="demo3"></p>
 <script>
 const person = {
   firstName: "John",
   lastName: "Doe",
   //fName:animal.firstName + animal.lastName,  X
-  id: 5566,
-  fullName:function(){ 
-   return person.firstName + " " + person.lastName
+  id: 5566,// arrow func not allow this keyword
+  fullName:()=> person.firstName + " " + person.lastName
    //return person.firstName + " " + person.lastName
 }
-};
+;
 // objecy connected with 'key'  key:value
 document.getElementById("demo").innerHTML ='person name is : ' + person.fullName();
 
 
 
-const animal = {
+const dog = {
   firstName: "John",
   lastName: "Miysc",
   //fName:animal.firstName + animal.lastName, X
   id: 5566,
-  fullName:function(){ 
-   return animal.firstName + " " + animal.lastName
+  fullName:()=> dog.firstName + " " + dog.lastName
    //return person.firstName + " " + person.lastName
 }
-};
-// objecy connected with 'key'  key:value
-document.getElementById("demo2").innerHTML ='animal name is: ' + animal.fullName();
+
+;
+// object connected with 'key'  key:value
+document.getElementById("demo2").innerHTML ='animal name is: ' + dog.fullName();
+
+
+
+
+const monkey = {
+    firstName: "John",
+    lastName: "belz",
+    //fName:animal.firstName + animal.lastName, X
+    id: 5566,
+    fullName:()=> monkey.firstName + " " + monkey.lastName
+     //return person.firstName + " " + person.lastName
+  
+  };
+  // object connected with 'key'  key:value
+  document.getElementById("demo3").innerHTML ='animal name is: ' + monkey.fullName();
 </script>
 </body>
 </html>

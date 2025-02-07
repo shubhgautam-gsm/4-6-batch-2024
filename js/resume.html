@@ -1,0 +1,87 @@
+import React from 'react';
+
+export default function Resume() {
+  return (
+    <div className="p-10 bg-gray-100 font-sans">
+      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8 border-t-8 border-blue-500">
+        <h1 className="text-4xl font-bold text-blue-700 text-center mb-2">Sheikh Rajib Samir</h1>
+        <p className="text-center text-gray-600">Nanavati Chowk, near Sterling Hospital, Jasal Complex, RMC Quarters Flat No. 181/3, 150 Ft. Ring Road, Rajkot - 360007</p>
+        <p className="text-center text-gray-600"> Phone:+91 90164 46977</p>
+        <hr className="my-4 border-gray-300" />
+
+        <Section title="Objective">
+          Aspiring Full Stack Developer with a solid foundation in Node.js and React.js, seeking to leverage my skills and knowledge to contribute to a dynamic development team. Dedicated to continuous learning and delivering high-quality solutions.
+        </Section>
+
+        <Section title="Education">
+          <strong>12th Higher Secondary Certificate (HSC)</strong><br />
+          Gujarat Secondary & Higher Secondary Education Board, Gandhinagar<br />
+          Year of Passing: 2024
+          <br /><br />
+          <strong>10th Secondary School Certificate (SSC)</strong><br />
+          Gujarat Secondary & Higher Secondary Education Board
+        </Section>
+
+        <Section title="Technical Skills">
+          <ul className="list-disc list-inside">
+            <li><strong>Languages:</strong> JavaScript (ES6+), HTML, CSS</li>
+            <li><strong>Frameworks & Libraries:</strong> Node.js, React.js, Express.js</li>
+            <li><strong>Databases:</strong> MongoDB, MySQL</li>
+            <li><strong>Tools & Platforms:</strong> Git, GitHub, Visual Studio Code, Postman</li>
+            <li><strong>Other Skills:</strong> RESTful APIs, CRUD operations, MVC Architecture, Responsive Web Design</li>
+          </ul>
+        </Section>
+
+        <Section title="Certifications">
+          Full Stack Development Course (Node.js & React.js) – IANT Institution
+        </Section>
+
+        <Section title="Projects">
+          <Project
+            title="ChatApp"
+            description="Developed a real-time chat application using Node.js, Express.js, and Socket.io. Integrated Firebase Authentication and Realtime Database for secure user management and message storage. Designed responsive UI with React.js and Bootstrap."
+          />
+          <Project
+            title="Profile Management System"
+            description="Built a web application for managing user profiles with functionalities to insert, update, and view profiles using PHP and MySQL. Implemented CRUD operations and ensured seamless user interaction with Bootstrap for styling."
+          />
+        </Section>
+
+        <Section title="Training">
+          Completed Full Stack Development training at IANT Institution, focusing on Node.js and React.js, covering both back-end and front-end development.
+        </Section>
+
+        <Section title="Personal Details">
+          <ul className="list-disc list-inside">
+            <li><strong>Age:</strong> 19</li>
+            <li><strong>Address:</strong> Nanavati Chowk, near Sterling Hospital, Jasal Complex, RMC Quarters Flat No. 181/3, 150 Ft. Ring Road, Rajkot - 360007</li>
+          </ul>
+        </Section>
+
+        <Section title="Declaration">
+          I hereby declare that the above information is true to the best of my knowledge and belief.
+          <br /><br />
+          <strong>Sheikh Rajib Samir</strong>
+        </Section>
+      </div>
+    </div>
+  );
+}
+
+function Section({ title, children }) {
+  return (
+    <div className="mb-6">
+      <h2 className="text-2xl font-semibold text-blue-600 mb-2 border-b-2 border-blue-500 inline-block">{title}</h2>
+      <p className="text-gray-700 leading-relaxed">{children}</p>
+    </div>
+  );
+}
+
+function Project({ title, description }) {
+  return (
+    <div className="mb-4">
+      <h3 className="text-xl font-bold text-gray-800">{title}</h3>
+      <p className="text-gray-700">{description}</p>
+    </div>
+  );
+}
