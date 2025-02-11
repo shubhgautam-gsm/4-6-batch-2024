@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Display Properties with JSON</h2>
+
+<h1>Java</h1>
+<p>[ name='john' && age='30' && city='newyork' ]</p>
+
+<h1>JavaScript</h1>
+<p> { name: "John",age: 30,city: "New York" };</p>
+<p><b>creates problem if structure</b></p>
+<h2>JSON I SOLUTION ONE STRUCTURE FOR ALL ALL-IN-ONE</h2>
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// Display JSON
+document.getElementById("demo").innerHTML = JSON.stringify(person);
+</script>
+
+</body>
+</html>
+
+

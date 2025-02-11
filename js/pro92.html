@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+</body>
+<script>
+    // model Car 
+    // Car={}
+    function Car(nm,color,price,engine) {
+        this.name =nm ;   
+        this.color = color;
+        this.price = price;
+        this.engine = engine;
+    }
+    //Car={
+    //    name:'bmw'     1 value 
+    //}
+  
+    const Danish = new Car("bmw", "red", 20000, "electric","3");
+    document.getElementById("demo").innerHTML = Danish.name + "."; 
+    console.log(Danish)
+  
+    const Divyang = new Car("nano", "green", 2000, "gas");
+    document.getElementById("demo2").innerHTML = Divyang.name + "."; 
+    console.log(Divyang);
+    // Display age
+  
+
+</script>
+</html>
+<!-- Car.name
+Car.color
+Car.price
+Car.engine -->
