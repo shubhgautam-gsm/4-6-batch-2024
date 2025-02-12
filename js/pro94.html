@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+</body>
+<script>
+  name=prompt('give:')
+  sound=prompt('give:')
+  color=prompt('give:')
+
+  function Animal(name,sound,color) {
+    return name +' '+ sound +' '+ color
+  }
+
+  Dog=Animal(name,sound,color)
+  
+  name=prompt('give:')
+  sound=prompt('give:')
+  color=prompt('give:')
+
+  Cat=Animal(name,sound,color)
+  document.getElementById('demo').innerHTML=Dog+' and '+Cat
+  console.log(Dog)
+</script>
+</html>

@@ -1,34 +1,6 @@
-h1{
-    border: 2px saddlebrown solid;
-    color:green;  
-    padding: 20px;
-    margin: 20px;
-  }
-  div.ex1 {
-    width: 300px;
-    background-color: yellow;
-  }
-
-  div.ex2 {
-    width: 300px;
-    padding: 25px;
-    box-sizing: border-box;
-    background-color: lightblue; 
-  }
-
-  .d1{
-    color:yellow;
-    font-family:cursive;
-  }
-  .d2{
-    color:brown;
-    font-family:cursive;
-    
-  }
-  .d3{
-    color:red;
-    font-family:cursive;
-    border: 2px solid black;
-    padding: inherit;
-    margin: 20px;
-  }
+p{
+    color: blueviolet;
+}
+#content{
+    background-color: blueviolet;
+}
