@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo"></p>
+    <button onclick="Chg()">changeName</button>
+
+    <script>
+        // Constructor function for Person Objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create 2 Person objects
+        const myFather = new Person("John", "Doe", 50, "red");
+        const myMother = new Person("Sally", "Rally", 48, "green");
+
+        // Add a Name Method
+        myMother.changeName = function (name) {
+            this.lastName = name;
+        }
+
+        function Chg() {
+            // Change Name
+            myMother.changeName("Doe");
+            document.getElementById("demo").innerHTML =
+                "My mother's last name is " + myMother.lastName;
+        }
+
+        // Display fullName
+        document.getElementById("demo").innerHTML =
+            "My mother's last name is " + myMother.lastName; 
+    </script>
+
+</body>
+
+</html>

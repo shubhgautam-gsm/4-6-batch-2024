@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Display Properties</h2>
+
+<p id="demo"></p>
+<script>
+    // Create an Object
+    const person = {
+      name: "John",
+      age: 30,
+      city: "New York",
+      total:function(){
+        return  this.name +this.city+this.age ;
+      }
+    };
+    
+    // first key then value x=name then x='john' continue...
+    let text = "";
+    
+    for (let [x,y] of Object.entries(person)) {
+      text += `${x} is ${y} <br> `;
+      //text += `${x} ${y} ${z} <br> `;
+    };
+    // x='name' store as a string y='John'
+    
+    // Display the Text
+    document.getElementById("demo").innerHTML = person.total();
+    // person.name + ' ' + person.age...
+    </script>
+    
+
+
+<!-- <script>
+// Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// first key then value x=name then x='john' continue...
+let text = "";
+
+for (let x of Object.entries(person)) {
+  text += `${x}  <br> `;
+  //text += `${x} ${y} ${z} <br> `;
+};
+// x=['name','John'] store as an array
+
+// Display the Text
+document.getElementById("demo").innerHTML = text;
+</script> -->
+
+</body>
+</html>
