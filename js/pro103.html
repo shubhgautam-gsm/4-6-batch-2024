@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Onload Example</title>
+</head>
+<body>
+
+<button id="myButton" >No Click Me</button>
+
+<script>
+window.onload = function() { // Assigning a function to window.onload
+  const now =  Date();
+  const timeString = now.toLocaleString();
+ // document.getElementById('myButton').textContent = now;
+  document.getElementById('myButton').textContent = timeString;
+
+  // Other initialization code...
+};
+
+// Or, using an arrow function (more modern syntax):
+// window.onload = () => { ... };
+window.alert('your class is over')
+</script>
+
+</body>
+</html>

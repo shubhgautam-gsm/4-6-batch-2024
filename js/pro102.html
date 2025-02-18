@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript HTML Events</h1>
+    <h2>The onclick Attribute</h2>
+
+    <p>Click the button to display the date.</p>
+    
+    <button onclick="displayDate()">The time is?</button>
+    <button onmousemove="displayDate()">The time is?</button>
+    <button onmouseover="displayDate()">The time is?</button>
+    <button onmouseleave="displayDate()">The time is?</button>
+    <button onkeydown="displayDate()">The time is?</button>
+
+    <!-- events  event onclick then only show date  -->
+    <p id="demo"></p>
+
+</body>
+<script>
+    function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+        // inbuilt function Date() of javascript
+    }
+   displayDate()
+</script>
+
+</html>

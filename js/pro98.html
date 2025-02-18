@@ -4,6 +4,7 @@
 <h1>JavaScript Object Constructors</h1>
 
 <p id="demo"></p>
+<p id="demo2">using prototype </p>
 
 <script>
 // Constructor function for Person objects
@@ -12,6 +13,7 @@ function Person(first, last, age, eye) {
   this.lastName = last;
   this.age = age;
   this.eyeColor = eye;
+  
 
 }
 
@@ -19,12 +21,12 @@ function Person(first, last, age, eye) {
 //myMother.nationality = "Franch";
 // Create 2 Person objects
 const myFather = new Person("John", "Doe", 50, "blue");
-
-
 const myMother = new Person("Sally", "Rally", 48, "green",'IT');
 
-Person.prototype.nationality='English'
 
+Person.prototype.nationality='English'
+//आदिरूप (prototype) किसी वस्तु या उत्पाद को बनाने से पहले बनाया गया उसका एक नमूना
+//model
 
 // Add nationality to first object
 
@@ -36,7 +38,13 @@ console.log(Person.nationality)
 // Display nationality 
 document.getElementById("demo").innerHTML =
 "My father is " + myFather.age; 
-</script>
 
+document.getElementById("demo2").innerHTML +=
+"My father is " + myFather.nationality; 
+
+
+</script>
+<!-- a=2
+a=a+3 -->
 </body>
 </html>
