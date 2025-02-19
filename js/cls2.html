@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Class Inheritance</h1>
+
+<p>Use the "extends" keyword to inherit all methods from another class.</p>
+<p>Use the "super" method to call the parent's constructor function.</p>
+
+<p id="demo"></p>
+
+<script>
+class Father {
+  constructor(company) {
+    this.company = "Tata";  // Default company name set in the Father class
+  }
+  //{company:"TATA"}
+
+  // Method to get the company name
+  getCompany() {
+    return  this.company;
+  }
+}
+
+class Son extends Father {
+  constructor(company,company2) {
+    super(company)
+     // Call the parent's constructor, which automatically sets the company
+    this.company2 = company2;  // Only need to pass company2 in the Son class constructor
+  }
+  // Method to show both companies
+  show() {
+    return 'My Father created company is '+this.getCompany() ;
+  }
+}
+//const jams = new Father("Tata");  // Only provide company2
+
+// Create an instance of Son, passing only the second company name
+const ratanji = new Son("StarBucks");  // Only provide company2
+
+// Display results in the HTML
+document.getElementById("demo").innerHTML = ratanji.show();  // Display the result for the Son instance
+</script>
+
+</body>
+</html>
+
+
+parent{
+   let a=20
+   <!-- local scope -->
+}
+<!-- extend vatharo parent ni property -->
+child extend parent{
+   
+    let b=30
+   console.log(a)
+   console.log(b)
+
+}

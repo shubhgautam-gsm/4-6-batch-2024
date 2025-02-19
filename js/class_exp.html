@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>YouTube Premium Access</h1>
+<p>Check if you have YouTube Premium based on the current day or date.</p>
+
+<p id="demo"></p>
+
+<script>
+class YouTubePremium {
+  constructor(expiryDay) {
+    this.expiryDay = expiryDay; // day when YouTube Premium expires or is available
+  }
+
+  checkPremiumAccess() {
+    const date = new Date();
+    const currentDay = date.getDate(); // Get the current day of the month
+
+    if (this.expiryDay <= currentDay) {
+      console.log('You have available YouTube Premium access.');
+      document.getElementById("demo").innerHTML = 'You have available YouTube Premium access.';
+    } else if (this.expiryDay <= 30) {
+      console.log('You have over available YouTube Premium access.');
+      document.getElementById("demo").innerHTML = 'You have over available YouTube Premium access.';
+    } else {
+      console.log('Your YouTube Premium access is not yet available.');
+      document.getElementById("demo").innerHTML = 'Your YouTube Premium access is not yet available.';
+    }
+  }
+}
+
+// Example: Assume YouTube Premium expires on the 25th day of the month.
+const youtubeAccount = new YouTubePremium(25);
+youtubeAccount.checkPremiumAccess();
+</script>
+
+</body>
+</html>
