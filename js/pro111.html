@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The slice() Method</h2>
+
+    <p>Extract a part of a string and return the extracted parts in a new string:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "Apple,adasadssadfrefdsfd Banana, Kiwi";
+//        let part = text.slice(-4, 19)
+//        let part = text.slice(-4, -1) kiw because -1=i exclusive
+let part = text.slice(-4)
+
+        document.getElementById("demo").innerHTML = part;
+    </script>
+
+</body>
+
+</html>

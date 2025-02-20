@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+<h2>The concat() Method</h2>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="demo"></p>
+
+<script>
+products={
+    price1:'444$',
+    price2:'222$'
+}
+
+pro1=products.price1.replace('$', '')
+pro2=products.price2.replace('$', '')
+
+let text3 = parseInt(pro1) + parseInt(pro2);
+document.getElementById("demo").innerHTML = text3+'$';
+</script>
+
+</body>
+</html>
+
+
