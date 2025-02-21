@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The trimStart() Method</h2>
+    <h3>ACCOUNT NUMBER NOT SHOW FULLY</h3>
+    <p id="demo"></p>
+
+    <script>
+        let text1 = "AABCJ121APBO";
+        let text2 = text1.slice(-4);
+        let text3 =text1.length
+        //text2= text2.padStart(12,"X");
+        text2= text2.padStart(text3,"X");
+
+        document.getElementById("demo").innerHTML =
+           "length "+ text3 + " ACCOUNT NUMBER " + text2;
+            
+    </script>
+
+</body>
+
+</html>

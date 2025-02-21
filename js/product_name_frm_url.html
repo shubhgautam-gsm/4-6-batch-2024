@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <!-- doctor==doctor -->
+    <script>
+        let user = prompt('Give a comment');
+        //user=   img/phone/iphones/iphone12pro.jpg      hello this this doctor
+        // Correct substring check using includes()
+        if (user.includes('img/phone/iphones/')) {
+            user = user.replace('img/phone/iphones/', '');
+            user = user.replace('.jpg', '');
+
+        }
+        else if (user.includes('img/phone/samsung')) {
+            user = user.replace('img/phone/samsung/', '');
+            user = user.replace('.jpg', '');
+
+        }
+
+        document.getElementById('demo').innerHTML = user;
+    </script>
+</body>
+</html>
