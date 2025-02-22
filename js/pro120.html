@@ -12,11 +12,17 @@
         let user = prompt('Give a comment');
         
         // Correct substring check using includes()
+        //samavesh(include)
+        //'nonsense' in this=> ' cheated me nonsense'
+
         if (user.includes('nonsense')) {
             user = user.replace('nonsense', '***');
+            document.getElementById('demo').innerHTML = user;
         }
-
-        document.getElementById('demo').innerHTML = user;
+        else{
+            document.getElementById('demo').innerHTML = user;
+        }
+  
     </script>
 </body>
 </html>

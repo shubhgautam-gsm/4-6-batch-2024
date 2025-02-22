@@ -9,7 +9,7 @@
     <p id="demo"></p>
     <!-- doctor==doctor -->
     <script>
-        let user = prompt('Give a comment');
+        let user = prompt('Give a image link');
         //user=   img/phone/iphones/iphone12pro.jpg      hello this this doctor
         // Correct substring check using includes()
         if (user.includes('img/phone/iphones/')) {
@@ -17,7 +17,7 @@
             user = user.replace('.jpg', '');
 
         }
-        else if (user.includes('img/phone/samsung')) {
+        else if (user.includes('img/phone/samsung/')) {
             user = user.replace('img/phone/samsung/', '');
             user = user.replace('.jpg', '');
 

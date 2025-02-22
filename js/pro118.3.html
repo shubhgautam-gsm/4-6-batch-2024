@@ -11,10 +11,12 @@
 <p id="demo"></p>
 
 <script>
-let text = "ABCDEFGH1234";
-text = text.padStart(20,"X");
+let text = "ABCDEFGH1234";//12
+text1 = text.padStart(14,"X");//XXABCDEFGH1234
+text2 = text1.padEnd(16,"X");//XXABCDEFGH1234 + 'XX'
+//XXABCDEFGH1234XX
 
-document.getElementById("demo").innerHTML = text;
+document.getElementById("demo").innerHTML = text2;
 </script>
 
 </body>

@@ -10,12 +10,15 @@
 
     <script>
         let text1 = "ABCJ1221APO";
-        let text2 = text1.slice(7, 14);
+        //let text2 = text1.slice(7, 14);
+        let text2 = text1.slice(-4);
+ 
         let text3 = '';
         //text2 = text2.concat('xxxx', text2)
-        //text2 = text3.concat('xxxx', text2)
+        //text2 = text3.concat('xxxx') abcxxx i want xxxabc
 
-        text2 = text3.concat('xxxx', text2)
+        //text2 = text3.concat('xxxx', text2)
+        text2='xxxxxx' + text2
         document.getElementById("demo").innerHTML =
             "Length text1 = " + text1 + "<br>Length text2 = " + text2;
             
