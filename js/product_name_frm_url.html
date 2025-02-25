@@ -12,10 +12,15 @@
         let user = prompt('Give a image link');
         //user=   img/phone/iphones/iphone12pro.jpg      hello this this doctor
         // Correct substring check using includes()
-        if (user.includes('img/phone/iphones/')) {
+        if (user.includes('img/phone/iphones/') && user.includes('.jpg')){
             user = user.replace('img/phone/iphones/', '');
             user = user.replace('.jpg', '');
-
+            
+        }
+        else if(user.includes('img/phone/iphones/') && user.includes('.png')){
+            user = user.replace('img/phone/iphones/', '');
+            user = user.replace('.png', '');
+            
         }
         else if (user.includes('img/phone/samsung/')) {
             user = user.replace('img/phone/samsung/', '');
