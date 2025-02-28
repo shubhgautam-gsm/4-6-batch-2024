@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The match() Method</h2>
+
+<p>Perform a search:</p>
+
+<p id="demo"></p>
+
+<script>
+let user = prompt('Give a name'); // Get user input
+let topbusinessman = "The top business mans are Mukeshbhai,Ratanbhai,Divyangbhai ";
+
+// Create a dynamic regular expression
+let insense = new RegExp(user, "i"); // 'i' makes it case-insensitive
+let oneOf = topbusinessman.match(insense);
+
+document.getElementById("demo").innerHTML = oneOf ;
+</script>
+
+</body>
+</html>

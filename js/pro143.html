@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The match() Method</h2>
+
+<p>Perform a global search for "ain":</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in SPAIN stays mainly in the plain"; 
+//const myArr = text.match(/ain/i);// only first match
+//const myArr = text.match(/ain/g);// all match case sensitive  A=a is not eqaul
+const myArr = text.match(/ain/gi);// gi all match case insensitive  A=a is eqaul
+
+//const myArr = text.match(/ain/gi);
+
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+</script>
+
+</body>
+</html>

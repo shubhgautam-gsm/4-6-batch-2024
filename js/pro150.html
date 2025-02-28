@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The includes() Method</h2>
+
+<p>Check if a string includes "world" starting from position 12:</p>
+<p id="demo"></p>
+
+<p>The includes() method is not supported in Internet Explorer.</p>
+
+<script>
+let text = "Hello world, welcome world to the universe.";
+
+lists=text.match(/world/g);
+
+length=lists.length;
+
+
+document.getElementById("demo").innerHTML = lists+' length:'+length;
+</script>
+
+</body>
+</html>
