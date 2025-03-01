@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Template Strings</h1>
+<p>Templates allow variables in strings:</p>
+
+<!-- <p id="demo"></p> -->
+
+<ol id="demo">
+    
+</ol>
+
+<p>Templates are not supported in Internet Explorer.</p>
+</body>
+<script>
+    fruits=[ 'apple','orange','cherry','kiwi']
+    for(i=0;i<fruits.length;i++){
+       document.getElementById('demo').innerHTML+=`<li>${fruits[i]}</li>`
+    }
+</script>
+</html>

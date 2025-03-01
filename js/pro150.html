@@ -14,11 +14,13 @@
 let text = "Hello world, welcome world to the universe.";
 
 lists=text.match(/world/g);
+//lists=['world','world'];
 
 length=lists.length;
 
 
 document.getElementById("demo").innerHTML = lists+' length:'+length;
+//document.getElementById("demo").innerHTML = lists[1]+' length:'+length;
 </script>
 
 </body>

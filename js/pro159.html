@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Template Strings</h1>
+    <p>Templates allow variables in strings:</p>
+
+    <p id="demo"></p>
+
+    <p>Templates are not supported in Internet Explorer.</p>
+
+    <script>
+        let price = 10;
+        let VAT = 0.25;
+        let total = `Total:${(price * (1 + VAT)).toFixed(2)}`;
+        // 10*(1+0.25) 
+        // 10*(1.25)
+        // (12.5).tofixed(2)
+        //12.50s
+        document.getElementById("demo").innerHTML = total;
+        friends=['jay', 'meet', 'heet', 'vaibhavsir','jeet','preet']
+        //console.log(friends[1]);
+        //console.log(friends[2]);
+
+        //console.log(friends);
+
+        for(i=0;i<4;i++){
+            console.log(friends[i]);
+        }
+    </script>
+
+
+</body>
+
+</html>
