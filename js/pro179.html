@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Numbers</h1>
+<h2>BigInt typeof</h2>
+
+<p>The typeof a BigInt is:</p>
+<p id="demo"></p>
+
+<script>
+const secrets =Symbol('secret');
+const obj = {
+  [secrets]: 'hidden data password of bank xyz  is abswpqrstvz12344',
+  email:'abc12@gmail.com',
+};
+// Cannot access `secret` without using the symbol directly
+document.getElementById("demo").innerHTML = obj[secrets]
+
+</script>
+
+</body>
+</html>
+
+
