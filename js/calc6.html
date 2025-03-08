@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    form {
+        width: 160px;
+        background-color: rgb(49, 46, 46);
+        color: aliceblue;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    input[type="button"] {
+        margin: 5px;
+        font-family: cursive;
+        width: 27px;
+        height: 30px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        margin: 5px;
+        font-family: cursive;
+        text-align: right;
+    }
+</style>
+
+<body>
+
+    <form action="">
+        <div>
+            <input type="text" name="values" value="">
+        </div>
+        <div>
+            <input type="button" name="val" value="1" onclick="one()">
+            <input type="button" name="val" value="2" onclick="two()">
+            <input type="button" name="val" value="3" onclick="three()">
+            <input type="button" name="addi" value="+" onclick="add()">
+        </div>
+        <div>
+            <input type="button" name="val4" value="4" onclick="four()">
+            <input type="button" name="val5" value="5" onclick="five()">
+            <input type="button" name="val6" value="6" onclick="six()">
+            <input type="button" name="subt" value="-" onclick="sub()">
+        </div>
+        <div>
+            <input type="button" name="val7" value="7" onclick="seven()">
+            <input type="button" name="val8" value="8" onclick="eight()">
+            <input type="button" name="val9" value="9" onclick="nine()">
+            <input type="button" name="division" value="/" onclick="divi()">
+            <!-- name='divi' onclick='divi()' not give same name as name -->
+        </div>
+        <div>
+            <input type="button" name="val10" value="0" onclick="zero()">
+            <input type="button" name="multi" value="*" onclick="mult()">
+            <input type="button" name="clear" value="C" onclick="clearDisplay()">
+            <input type="button" name="equ" value="=" onclick="calc()">
+        </div>
+    </form>
+
+</body>
+<script>
+    function one() {
+        let x = document.getElementsByName('val')[0].value;
+        //  x= 1 get value from whose Name='val1'
+        document.getElementsByName('values')[0].value += x;
+        //document.getElementsByName('values')[0].value += 1; overide
+
+    }
+    function two() {
+        let x = document.getElementsByName('val')[1].value;
+        //  x= 2 get value from whose Name='val2'
+        document.getElementsByName('values')[0].value += x;
+        //document.getElementsByName('values')[0].value += 2;
+
+
+    }
+    function three() {
+        let x = document.getElementsByName('val')[2].value;
+        document.getElementsByName('values')[0].value += x;
+    }
+    function four() {
+        let x = document.getElementsByName('val4')[0].value;
+        document.getElementsByName('values')[0].value += x;
+    }
+    function five() {
+        let x = document.getElementsByName('val5')[0].value;
+        document.getElementsByName('values')[0].value += x;
+    }
+    function six() {
+        let x = document.getElementsByName('val6')[0].value;
+        document.getElementsByName('values')[0].value += x;
+    }
+    function seven() {
+        let x = document.getElementsByName('val7')[0].value;
+        document.getElementsByName('values')[0].value += x;
+    }
+    function eight() {
+        let x = document.getElementsByName('val8')[0].value;
+        document.getElementsByName('values')[0].value += x;
+    }
+    function nine() {
+        let x = document.getElementsByName('val9')[0].value;
+        document.getElementsByName('values')[0].value += x;
+    }
+    function zero() {
+        let x = document.getElementsByName('val10')[0].value;
+        document.getElementsByName('values')[0].value += x;
+    }
+
+
+    //1+2-3*
+
+
+    function add() {
+        let display = document.getElementsByName('values')[0];
+        let lastChar = display.value.slice(-1);
+        if (!(['+', '-', '/', '*'].includes(lastChar))) {
+            document.getElementsByName('values')[0].value += '+';
+        }
+    }
+    function sub() {
+        let display = document.getElementsByName('values')[0];
+        let lastChar = display.value.slice(-1);
+        if (!['+', '-', '/', '*'].includes(lastChar)) {
+            document.getElementsByName('values')[0].value += '-';
+        }
+    }
+    function divi() {
+        let display = document.getElementsByName('values')[0];
+        let lastChar = display.value.slice(-1);
+        if (!['+', '-', '/', '*'].includes(lastChar)) {
+            document.getElementsByName('values')[0].value += '/';
+        }
+    }
+    function mult() {
+        let display = document.getElementsByName('values')[0];
+        let lastChar = display.value.slice(-1);
+        if (!['+', '-', '/', '*'].includes(lastChar)) {
+            document.getElementsByName('values')[0].value += '*';
+        }
+    }
+
+
+    function clearDisplay() {
+        document.getElementsByName('values')[0].value = "";
+    }
+    function calc() {
+        let result = eval(document.getElementsByName('values')[0].value);
+        //document.getElementsByName('values')[0].value += result;
+        document.getElementsByName('values')[0].value = result;
+    }
+</script>
+
+</html>
