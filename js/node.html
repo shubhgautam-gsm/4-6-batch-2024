@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+<!-- 
+para ?? para=<p></p> 
+node ?? node=This is new.
+
+para.appendChild(node);
+para.appendChild('This is new')
+
+x=<p> This is new.</p>
+
+-->
+
+
+    <h2>JavaScript HTML DOM</h2>
+    <p>Add a new HTML Element.</p>
+
+    <div id="roll1">
+        <h1>FIRST DIV</h1>
+        <p id="p1">
+             (P 1) ELEMENT(TAG) This is a paragraph.
+            </p>
+        <p id="p2"> (P 2) ELEMENT(TAG) This is another paragraph.</p>
+        
+
+    </div>
+    <div id="roll2">
+        <h1>SECOND DIV</h1>
+        <p id="p1"> (P 1) ELEMENT(TAG) This is a paragraph.</p>
+        <p id="p2"> (P 2) ELEMENT(TAG) This is another paragraph.</p>
+        <!-- <p> This is new.</p>  -->
+    </div>
+    <script>
+        const para = document.createElement("p");
+        const node = document.createTextNode("This is new.");
+         x=para.appendChild(node);
+        // <p> This is new.</p>
+        document.getElementById('roll2').appendChild(x)
+        
+    </script>
+
+</body>
+
+</html>
