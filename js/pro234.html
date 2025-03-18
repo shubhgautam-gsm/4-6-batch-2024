@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p>If you use a named index when accessing an array, JavaScript will redefine the array to a standard object, and some array methods and properties will produce undefined or incorrect results.</p>
+
+<p id="demo"></p>
+
+<script>
+const person = [];
+person["firstName"] = "John"; //we give value to key
+person["lastName"] = "Doe";
+person["age"] = 46; 
+console.log(person)
+console.log(person[0]) // not print object through index
+console.log(person["firstName"]) //key name need
+</script>
+
+</body>
+</html>
+

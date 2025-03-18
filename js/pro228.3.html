@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>Looping an Array</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+ const fruits = ["Banana", "Orange", "Apple", "Mango"];
+ const veg = ["Bana", "ange", "Mngo"];
+
+let fLen = fruits.length;
+let vLen = veg.length;
+
+text="<ol>"
+for(let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+//<ol>   
+    //forloop
+//<li>Banana<li>
+//<li>Orange<li>
+//<li>Apple<li>
+text+="</ol>"
+//<ol>
+// <li>Banana<li>
+// <li>Orange<li>
+// <li>Apple<li>
+//</ol>
+text1="<ol type='A'>"
+
+for(let i = 0; i < vLen; i++) {
+    text1 += "<li>" + veg[i] + "</li>";
+  }
+  
+ text1+="</ol>"
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("demo1").innerHTML = text1;
+</script>
+
+<!-- 
+<ol>
+    <li>a</li>
+    <li>b</li>
+    <li>2</li>
+</ol>
+
+
+<ol>
+    <li>a</li>
+</ol>
+
+<ol>
+    <li>b</li>
+</ol>
+
+<ol>
+    <li>c</li>
+</ol> -->
+</body>
+</html>
+
+
