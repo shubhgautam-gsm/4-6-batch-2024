@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Operators</h1>
+<h2>The instanceof Operator</h2>
+
+<p>The instanceof operator returns true if an object is an instance of a specified object type:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script> 
+// Create an Array
+const fruits = {1:"apples", 2:"bananas", 3:"oranges"};
+const fruits2 = ["apples","bananas","oranges"];
+
+document.getElementById("demo").innerHTML =
+"Array: " + (fruits instanceof Object);
+
+document.getElementById("demo2").innerHTML =
+"Array: " + (fruits2 instanceof Array);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enc:<h1 id="pass"></h1>
+    dec:<h1 id="pass2"></h1>
+</body>
+<script>
+    user=prompt('enter pass:');//tom   user="tom"    string
+    /*  user='tomato' */
+    enc_user=user.replaceAll("o","n");
+     /* enc_user='tnmatn' */
+    enc_user=enc_user.replaceAll("a","r");
+    /*  user='tomrto' */
+     /* enc_user='tnmrtn' */
+
+    document.getElementById('pass').innerHTML=enc_user;
+    dec_user=enc_user.replaceAll('n','o');
+    dec_user=dec_user.replaceAll('r','a');
+    document.getElementById('pass2').innerHTML=dec_user;
+</script>
+</html>
