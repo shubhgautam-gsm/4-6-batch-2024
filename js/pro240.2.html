@@ -5,7 +5,7 @@
 <h2>Creating an Array</h2>
 
 
-
+<h1 id="head"></h1>
 <p id="demo"></p>
 
 <script>
@@ -19,11 +19,17 @@
           {name:"Fiat", models:["500", "Panda"]}//2
         ]
       }
-      document.getElementById("demo").innerHTML =myCars.cars[1]; 
-      //document.getElementById("demo").innerHTML =myCars.cars;  
- 
-      //document.getElementById("demo").innerHTML = cars[models[1];  
 
+      for(x in myCars.cars){
+        for(j in myCars.cars[x].models){
+        document.getElementById('head').innerHTML+=`
+            ${myCars.cars[x].models}<br>
+                   
+        `}
+      }
+      //orbit 
+      //          sun 1(earth 365(moon 14))  
+      // 
 </script>
 
 </body>

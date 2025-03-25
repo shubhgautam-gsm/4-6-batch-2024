@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enc:<h1 id="pass"></h1>
+    dec:<h1 id="pass2"></h1>
+</body>
+<script>
+    user = 'santaclause';  // Original user string
+
+    let encript_user = '';  // To store the encrypted string
+    let cov = [];  // Array to hold characters
+
+    // Encryption process (with exact array swaps)
+    for (let i = 0; i < user.length; i++) {
+        let new_user = user[i];  // Current character
+        cov = [new_user];  // Convert the character into an array
+
+        // Replace 'n' with 'z' and 'a' with 'x'
+        
+        // Perform explicit array swapping according to your original structure
+        if (cov.length > 2) {
+            // Swap elements as described
+            let temp = cov[0];
+            cov[0] = cov[2];
+            cov[2] = temp;
+
+            temp = cov[1];
+            cov[1] = cov[3];
+            cov[3] = temp;
+
+            // Maintain the element at cov[4] unchanged
+            // No need for extra swaps because cov[4] stays the same
+        }
+        cov[0] = cov[0].replace('n', 'z').replace('a', 'x');
+
+
+        // Append the encrypted character to the string
+        encript_user += cov[0];
+
+        // Log the encrypted character to the console
+        console.log(cov);
+    }
+
+    // Display the encrypted result
+    document.getElementById('pass').innerHTML = encript_user;
+
+    let decript_user = '';  // To store the decrypted string
+
+    // Decryption process (reverse the encryption)
+    for (let i = 0; i < encript_user.length; i++) {
+        let new_user = encript_user[i];  // Current character of the encrypted string
+        cov = [new_user];  // Convert the character into an array
+        
+        // Reverse the replacement: 'z' to 'n' and 'x' to 'a'
+        cov[0] = cov[0].replace('z', 'n').replace('x', 'a');
+        
+        // Perform explicit array swapping again as per your structure
+        if (cov.length > 2) {
+            // Reverse the swaps as described
+            let temp = cov[0];
+            cov[0] = cov[2];
+            cov[2] = temp;
+
+            temp = cov[1];
+            cov[1] = cov[3];
+            cov[3] = temp;
+        }
+
+        // Append the decrypted character to the string
+        decript_user += cov[0];
+    }
+
+    // Display the decrypted result
+    document.getElementById('pass2').innerHTML = decript_user;
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>Creating an Array</h2>
+
+
+<h1 id="head"></h1>
+<p id="demo"></p>
+
+<script>
+    points=[2]
+    const myCars = {
+        name: "John",
+        age: 30,
+        cars: [
+          {name:"Frd", models:["Fiesta", "Focus", "Mustang"]},//0
+          {name:"BMW", models:["320", "X3", "X5"]},//1
+          {name:"Fiat", models:["500", "Panda"]}//2
+        ]
+      }
+
+      for(x in myCars.cars){
+        document.getElementById('head').innerHTML+=`
+            ${myCars.cars[x].models}<br>       
+        `}
+        //(sir 1 month)  (principle 7 week) (madam 1 day) (divyang notest)
+        //x='hi'     ''
+        //x='jay'    'hi jay'
+        //x='u'      'hi jay u'
+        //print(x) 
+        //document.getElementById("demo").innerHTML =x;  
+       // sentences pass
+</script>
+
+</body>
+</html>

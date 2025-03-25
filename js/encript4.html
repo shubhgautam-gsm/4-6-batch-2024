@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enc:<h1 id="pass"></h1>
+    dec:<h1 id="pass2"></h1>
+</body>
+<script>
+    user='santaclause';//tom   user="tom"    string
+        for(i=0 ;i<user.length;i=i+1){
+            new_user=user[i]
+            //'santaclause'6
+            cov=Array(new_user)
+            // cov=['s','a','n','t','a']
+            // cov[0]=cov[2]  cov[2]=cov[0]  cov[1]=cov[3] cov[3]=cov[1]  cov[4]=cov[4] 
+            // encript_user=['n','t','s','a','a']
+           
+            // decript_user=encript_user.replaceAll('n','z')
+            // encript_user=decript_user.replaceAll('a','x')
+            // encript_user= ['n','t','s','a','a']
+            // encript_user= ['z','t','s','x','x']
+            // encript_user[0]=encript_user[2]  encript_user[2]=encript_user[0]  encript_user[1]=encript_user[3] cov[3]=cov[1]  cov[4]=cov[4] 
+
+
+             //ENC                                   //DEC
+      
+
+             // DIVYANG(SANATA)-->    MUKESH     --> DANISH(SANTA)  (ZTSXX)
+
+//user=jnya
+//1
+//dec_user=jaya
+//2
+//dec_user=jay1
+            //step for decript reverse proccess
+            encript_user=encript_user.replaceAll('z','n')
+            encript_user=encript_user.replaceAll('x','a')
+
+
+             //8
+            document.getElementById('pass').innerHTML+=cov
+            console.log(cov)
+            //saga a   masa b dama c
+            //end to end encription  
+
+        }
+</script>
+
+<!-- <script>
+    user=['tom','jerry','santa']//    string
+        for(i=0 ;i<user.length;i++){
+            //document.getElementById('pass').innerHTML+=user[i]+'<br>'
+            document.getElementById('pass').innerHTML+=user[i]+' '
+        }
+</script> -->
+</html>
+
+
+<!-- 
+join
+ for i in user -->

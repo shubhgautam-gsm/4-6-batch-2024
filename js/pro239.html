@@ -10,16 +10,18 @@
 <p id="demo2"></p>
 
 <script> 
-// Create an Array
+// Create an Array  [INDEX:VALUE]    V INDEX
+//Object {Key:Value}    X NO INDEX
 const fruits = {1:"apples", 2:"bananas", 3:"oranges"};
 const fruits2 = ["apples","bananas","oranges"];
 
 document.getElementById("demo").innerHTML =
-"Array: " + (fruits instanceof Object);
+"Array: " + (fruits instanceof Array);
 
 document.getElementById("demo2").innerHTML =
-"Array: " + (fruits2 instanceof Array);
+"Array: " + (fruits2 instanceof Object);
 
+//"Array: " + (Array.isArray(fruits2));
 </script>
 
 </body>
