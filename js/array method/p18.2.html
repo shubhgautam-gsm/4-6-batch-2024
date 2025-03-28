@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The flatMap() Method</h2>
+<p id="hello1">0</p>
+<p></p>
+<p type="'hello2"></p>
+<p class='hello3' >2</p>  
+<p class='hello3' >3</p>  
+<p class='hello3' >4</p>  
+<p class='hello3' >5</p>  
+<p class='hello3' >6</p>  
+
+<!-- <p   class='demo' type="'password" id="demo"></p>   4(class,type,id,p) -->
+
+
+<script>
+const myArr = [1, 2, 3, 4, 5,6];
+
+
+//const newArr = myArr.flatMap(x => [2, 2 * 10]);// map(loop)[1,10,2,20]
+//document.getElementById("demo").innerHTML = newArr;
+
+function chg(x){
+    document.getElementsByTagName("p")[2].innerHTML +=x;
+
+}
+chg(myArr[0])
+chg(myArr[1])
+chg(myArr[2])
+chg(myArr[3])
+chg(myArr[4])
+chg(myArr[5])
+//for(x=0;x<10;x++){
+  //  document.getElementsByTagName("p")[x].innerHTML += 'divyang';
+//}
+
+</script>
+
+</body>
+</html>
+

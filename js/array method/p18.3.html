@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The flatMap() Method</h2>
+<p id="hello1"></p>
+<p></p>
+<p type="'hello2"></p>
+
+
+<!-- <p   class='demo' type="'password" id="demo"></p>   4(class,type,id,p) -->
+
+
+<script>
+const myArr = [1, 2, 3, 4, 5,6];
+
+
+//const newArr = myArr.flatMap(x => [2, 2 * 10]);// map(loop)[1,10,2,20]
+//document.getElementById("demo").innerHTML = newArr;
+
+function chg(x){
+    document.getElementsByTagName("p")[2].innerHTML +=  x + ',' + x*10 + ',';
+
+}
+//chg(myArr[0])
+//chg(myArr[1])
+
+for(x=0;x<myArr.length;x++){
+    chg(myArr[x]);
+}
+
+</script>
+
+</body>
+</html>
+
