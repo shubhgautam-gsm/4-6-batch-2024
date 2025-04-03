@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        let cost=[12000,22000,33,20000,30000,16000]
+  
+       let range=cost.find(myRange)
+       // find value more then 22000 from their(potani index thi jovanu chalu karse) index  
+       // 2>22000 (x)   20000>22000 (x)   30000 > 22000 (v(true)) 
+       document.getElementById('demo').innerHTML='your range is '+ range
+
+       function myRange(value,index,array){
+        return value>22000;
+       //return index>1;
+
+       }
+    </script>
+</body>
+</html>

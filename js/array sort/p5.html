@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The toSorted() Method</h2>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        const months = ["B", "C", "A", "D"];//OLD ARRAY(ORGINAL ARRAY)
+
+        document.getElementById("demo").innerHTML = months;
+        
+        months.toSorted();//CREATES NEW ARRAY
+        // months=[A,B,C,D] A-Z(ASCENDING ORDER) ORGINAL DATA NOT CHANGED
+        document.getElementById("demo2").innerHTML = months;
+        document.getElementById("demo3").innerHTML = months;
+
+
+    </script>
+
+</body>
+
+</html>

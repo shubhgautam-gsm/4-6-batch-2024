@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The findLast() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+const temp = [27, 28, 35, 90 , 40, 80,50, 55, 30];//FROM THE LAST-FIRST
+let high = temp.findLast(x => x > 55);
+
+document.getElementById("demo").innerHTML = "The last temperature over 55 was " + high;
+</script>
+
+</body>
+</html>
