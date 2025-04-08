@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 100px;
+            width: 200px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="car1.jpg" alt="" id="car1">
+    <hr>
+    <img src="car2.jpg" alt="" id="car2">
+<!-- 
+    <button onclick="car1()">car1</button>
+    <button onclick="car2()">car2</button> -->
+    <button onclick="start()">start</button>
+</body>
+<script>
+    function start() {
+        function car1() {
+            let car1 = document.getElementById('car1');
+            car1.style.marginLeft = (parseInt(car1.style.marginLeft) || 0) + (10 * Math.random()) + 'px';
+        }
+
+        function car2() {
+            let car2 = document.getElementById('car2');
+            car2.style.marginLeft = (parseInt(car2.style.marginLeft) || 0) + (10 * Math.random()) + 'px';
+        }
+        car1()
+        car2()
+    }
+</script>
+
+</html>
