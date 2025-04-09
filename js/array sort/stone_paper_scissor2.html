@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+</body>
+<script>
+    let divyang,computer;
+    choose= ['stone','paper','scissor']
+    //0.9 x 3 =   0,1,2  0. 1. 2. 
+    //0.9
+    random_index=parseInt(Math.random()*3)
+    //(0.1,0.2,0.3,0.4,0.5,0.6, 0.7,0.8,0.9 ,1)    x 3    =0(),1(),2()  [1][2]
+            
+    computer=choose[0]
+    divyang=prompt('divyang choose stone | paper | scissor');
+
+
+    if(divyang=='stone' && computer=='scissor'){
+        document.getElementById('demo').innerHTML='divyang wins';
+    }
+    else if(divyang=='scissor' && computer=='stone'){
+        document.getElementById('demo').innerHTML='computer wins';
+    }
+    else if(divyang=='paper' && computer=='stone'){
+        document.getElementById('demo').innerHTML='divyang wins';
+    }
+    else if(divyang=='stone' && computer=='paper'){
+        document.getElementById('demo').innerHTML='computer wins';
+    }
+    else if(divyang=='scissor' && computer=='paper'){
+        document.getElementById('demo').innerHTML='divyang wins';
+    }
+    else if(divyang=='paper' && computer=='scissor'){
+        document.getElementById('demo').innerHTML='computer wins';
+    }
+
+
+</script>
+</html>
+
+<!-- 20/100=0.2 -->
+
+
+<!-- 100 x 2x1000 =0.002 x1000 -->
+

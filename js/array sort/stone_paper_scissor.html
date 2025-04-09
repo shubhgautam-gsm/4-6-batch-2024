@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+</body>
+<script>
+    let divyang,danish,computer;
+    divyang=prompt('divyang choose stone | paper | scissor');
+    danish=prompt('danish choose stone | paper | scissor');
+
+    if(divyang=='stone' && danish=='scissor'){
+        document.getElementById('demo').innerHTML='divyang wins';
+    }
+    else if(divyang=='scissor' && danish=='stone'){
+        document.getElementById('demo').innerHTML='danish wins';
+    }
+    else if(divyang=='paper' && danish=='stone'){
+        document.getElementById('demo').innerHTML='divyang wins';
+    }
+    else if(divyang=='stone' && danish=='paper'){
+        document.getElementById('demo').innerHTML='danish wins';
+    }
+    else if(divyang=='scissor' && danish=='paper'){
+        document.getElementById('demo').innerHTML='divyang wins';
+    }
+    else if(divyang=='paper' && danish=='scissor'){
+        document.getElementById('demo').innerHTML='danish wins';
+    }
+
+
+</script>
+</html>
+
+<!-- 20/100=0.2 -->
+
+
+<!-- 100 x 2x1000 =0.002 x1000 -->
+
