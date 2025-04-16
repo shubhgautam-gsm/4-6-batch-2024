@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Fisher-Yates Shuffle (No Random)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.4s, background-color 0.4s;
+    }
+    .swapping {
+      background-color: #FF5722 !important;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Animated Fisher-Yates Shuffle (No Random)</h2>
+<div class="container" id="boxContainer"></div>
+<button onclick="startFisherYates()">Start Fisher-Yates Shuffle</button>
+<p id="status"></p>
+
+<script>
+  let data = [40, 100, 1, 5, 25, 10];
+  const container = document.getElementById("boxContainer");
+  const status = document.getElementById("status");
+
+  function renderBoxes(arr) {
+    container.innerHTML = '';
+    arr.forEach(value => {
+      const box = document.createElement('div');
+      box.className = 'box';
+      box.textContent = value;
+      container.appendChild(box);
+    });
+  }
+
+  async function startFisherYates() {
+    status.textContent = "Shuffling...";
+    let arr = [...data];
+    renderBoxes(arr);
+    const boxes = container.children;
+
+    for (let i = arr.length - 1; i > 0; i--) {
+      let j = i - 1; // No randomness, just sequential swap
+
+      // Highlight the elements being swapped
+      boxes[i].classList.add('swapping');
+      boxes[j].classList.add('swapping');
+
+      await new Promise(resolve => setTimeout(resolve, 700)); // wait for animation
+
+      // Swap values in array
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+      renderBoxes(arr); // Re-render with new order
+
+      await new Promise(resolve => setTimeout(resolve, 200)); // short pause
+
+      // Remove highlight after swap
+      boxes[i]?.classList.remove('swapping');
+      boxes[j]?.classList.remove('swapping');
+    }
+
+    status.textContent = "Done!";
+  }
+
+  // Initial display
+  renderBoxes(data);
+</script>
+
+</body>
+</html>

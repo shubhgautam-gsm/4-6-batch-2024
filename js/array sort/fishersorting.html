@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fisher-Yates Inspired Sorting (Ascending to Descending)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.4s, background-color 0.4s;
+    }
+    .swapping {
+      background-color: #FF5722 !important;
+    }
+    .highlight {
+      background-color: #FFC107 !important;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Fisher-Yates Inspired Sort (Ascending to Descending)</h2>
+<div class="container" id="boxContainer"></div>
+<button onclick="startFisherYatesSort()">Start Fisher-Yates Inspired Sort</button>
+<p id="status"></p>
+
+<script>
+  let data = [40, 100, 1, 5, 25, 10];
+  const container = document.getElementById("boxContainer");
+  const status = document.getElementById("status");
+
+  // Render the array as boxes
+  function renderBoxes(arr) {
+    container.innerHTML = '';
+    arr.forEach(value => {
+      const box = document.createElement('div');
+      box.className = 'box';
+      box.textContent = value;
+      container.appendChild(box);
+    });
+  }
+
+  async function startFisherYatesSort() {
+    status.textContent = "Sorting...";
+    let arr = [...data];
+    renderBoxes(arr);
+    const boxes = container.children;
+
+    // Fisher-Yates inspired sort: Traverse from the end of the array and sort in ascending order
+    for (let i = arr.length - 1; i > 0; i--) {
+      let minIndex = i;  // Start by assuming the last element is the smallest in the unsorted part
+
+      // Compare each element in the remaining unsorted portion
+      for (let j = 0; j < i; j++) {
+        // Highlight the elements being compared
+        boxes[i].classList.add('highlight');
+        boxes[j].classList.add('highlight');
+        
+        await new Promise(resolve => setTimeout(resolve, 400)); // wait for animation
+
+        // If a smaller element is found, update the index of the smallest element
+        if (arr[j] < arr[minIndex]) {
+          minIndex = j;
+        }
+
+        // Remove highlight after comparison
+        boxes[j].classList.remove('highlight');
+      }
+
+      // If we found a smaller element, swap it
+      if (minIndex !== i) {
+        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];  // Swap elements
+        renderBoxes(arr);  // Re-render after the swap
+        await new Promise(resolve => setTimeout(resolve, 700)); // wait for animation
+      }
+
+      // Remove highlight after swap
+      boxes[i]?.classList.remove('highlight');
+    }
+
+    status.textContent = "Sorted!";
+  }
+
+  // Initial render
+  renderBoxes(data);
+</script>
+
+</body>
+</html>
