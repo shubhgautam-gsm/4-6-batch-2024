@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Specifying a day higher than max, will not result in an error but add the overflow to the next month:</h1>
+<p id="demo"></p>
+
+<script>
+    // 2018 but 0-11 jan-dec  11+4 15(april) 2019   30 + 3 month next
+    
+const d = new Date(2018, 15, 33, 10, 33, 30, 0);
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>

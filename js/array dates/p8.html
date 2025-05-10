@@ -1,0 +1,48 @@
+
+Result Size: 652 x 484
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+
+<h2>JavaScript new Date()</h2>
+
+<p>6 numbers specify year, month, day, hour, minute and second:</p>
+
+​<p id="demo1"></p>
+​<p id="demo2"></p>
+​<p id="demo3"></p>
+​<p id="demo4"></p>
+​<p id="demo5"></p>
+​<p id="demo6"></p>
+
+
+<script>
+
+    const d1 = new Date(2018, 11, 24, 10, 33, 30);// until seconds
+    const d2 = new Date(2018, 11, 24, 10, 33);// until min
+    const d3 = new Date(2018, 11, 24, 10);// until hour
+    const d4 = new Date(2018, 11, 24);// until day
+    const d5 = new Date(2018, 11);// until month
+    const d6= new Date(2018);// until year
+
+    document.getElementById("demo1").innerHTML = d1;
+    document.getElementById("demo2").innerHTML = d2;
+    document.getElementById("demo3").innerHTML = d3;
+    document.getElementById("demo4").innerHTML = d4;
+    document.getElementById("demo5").innerHTML = d5;
+    document.getElementById("demo6").innerHTML = d6;
+
+</script>
+
+​
+
+</body>
+
+</html>
+
+​
+

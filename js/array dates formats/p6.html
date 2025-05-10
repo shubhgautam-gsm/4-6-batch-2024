@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p id="demo"></p>
+
+<script>
+const d1 = new Date("03/25/2015");
+const d2 = new Date("03-25-2015");
+const d3 = new Date("MAR 25 2015");
+const d4 = new Date("March 25 2015");
+const d5 = new Date("MARCH, 25, 2015"); 
+document.getElementById("demo").innerHTML = d1+'<br>'+d2+'<br>'+d3+'<br>'+d4+'<br>'+d5;
+</script>
+
+</body>
+</html>

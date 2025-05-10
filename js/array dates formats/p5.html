@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript ISO Dates</h2>
+<p>Modify the time relative to UTC by adding +HH:MM or subtraction -HH:MM to the time.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+new Date("2015-03-25T12:00:00-06:00");
+// 12:00 uk then india 17:30   diff (5:30)
+// ?? 20:30     17:30+3:00
+// 12:00(17:30)-03:00 =(20:30)
+</script>
+
+</body>
+</html>
