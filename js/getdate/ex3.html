@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Class Method</h1>
+<p>Pass a parameter into the "age()" method.</p>
+
+<p id="demo"></p>
+
+<script>
+//what to do 1 month subcribe when over then cancel subscribe 
+movie=['RRR','BHOOTNI','RAID2']
+const sub = new Date('2025-04-17');
+const cur_date= new Date();
+const mil=1000*60*60*24*28 //month approx 5cro 2days
+const sub_sec=Date.parse(sub)
+const curr_sec=Date.parse(cur_date)
+const diff=curr_sec-sub_sec
+console.log(diff)
+console.log(mil)
+if(diff<mil){
+// api   /sub   (/sub,subscribe.html) (form)   
+document.getElementById("demo").innerHTML=movie[1]
+}
+else{
+// api /movies    (/movies,movies_all.html)
+document.getElementById("demo").innerHTML='SUBSCRIBE FOR WATCH MOVIES'
+}
+</script>
+</body>
+</html>
+
+

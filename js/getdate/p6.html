@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+</body>
+<script>
+    let  months = ["January","February","March","April","May","June","July",
+    "August","September","October","November","December"];
+
+    let get_month=new Date('2022-9-13').getMonth()
+    // get_month=4
+    document.getElementById('demo').innerHTML=months[get_month]
+</script>
+</html>

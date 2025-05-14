@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Dates</h1>
+<h2>The getTime() Method</h2>
+<p></p>
+<p>Return the number of milliseconds since midnight January 1, 1970:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML ='HOURS '+ d.getHours();
+document.getElementById("demo1").innerHTML ='MINS '+ d.getMinutes();
+document.getElementById("demo2").innerHTML ='SECS '+ d.getSeconds();
+</script>
+<!-- 
+OLD_GOLD_PRICE=50000
+CURRENT_GOLD_PRICE=55000
+OLD_GOLD=CURRENT_GOLD_PRICE  //UPDATE OLD PRICE (NEW)
+REPEAT
+OLD_GOLD=55000
+AFTER 1 SEC
+
+CURRENT_GOLD_PRICE=60000
+-->
+</body>
+</html>

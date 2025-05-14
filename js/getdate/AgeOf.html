@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>what u want to do ?? I want to find Age </h1>
+    <h2>current year - old year  </h2>
+    <h3>2025-2005=20</h3>
+    <h2 id="demo"></h2>
+</body>
+<script>
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    let Birth_Date=new Date('2005-03-10')
+    let old_year=Birth_Date.getFullYear() // FROM BIRTHDATE ->YEAR =2005
+    let Month=Birth_Date.getMonth() // FROM BIRTHDATE ->MONTH =2
+    let Day=Birth_Date.getDay() //// FROM BIRTHDATE ->DAY =4
+    let _Date=Birth_Date.getDate() //// FROM BIRTHDATE ->DATE =10
+
+    //DATE() YY-MM-DD-HH-MM-SS
+    //CURRENT_YEAR=2025
+    let current_year=new Date().getFullYear()
+
+    let age=current_year-old_year
+    document.getElementById('demo').innerHTML='age is '+age+' Month is '+Month +
+    ' Day is '+days[Day]+' Date '+_Date
+    //Date is keyword not use as variable
+</script>
+</html>

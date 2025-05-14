@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Date.parse()</h2>
+<p>Date.parse(string) returns milliseconds.</p>
+<p>You can use the return value to convert the string to a date object:</p>
+
+<p id="demo"></p>
+
+<script>
+let msec = Date.parse();
+const d = new Date(1000*60*60*24*31*12*42);
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+
+1970-2012
