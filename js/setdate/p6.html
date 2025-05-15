@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+let text;
+const today = new Date();//current year 2025
+const someday = new Date();// set year to 2024
+someday.setFullYear(2026, 0, 14); 
+// 2024>2025
+if (someday > today) {
+  text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
