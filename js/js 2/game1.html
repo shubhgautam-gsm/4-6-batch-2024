@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1 id="result"></h1>
+
+</body>
+
+</html>
+
+<script>
+    let chooses=['stone','paper','scissor']
+    let rand_index=Math.trunc((Math.random()*3))
+    let rand_index2=Math.trunc((Math.random()*3))
+    let player1=chooses[rand_index]
+    let player2=chooses[rand_index2]
+ 
+    if(player1==chooses[0] && player2==chooses[1] ){
+        document.getElementById('result').innerHTML=`player 1 choose ${chooses[0]}  
+        and player2 choose ${chooses[1]} so player 2 wins`
+    }    
+    else if(player1==chooses[1] && player2==chooses[0] ){
+        document.getElementById('result').innerHTML=`player 2 choose ${chooses[1]}  
+        and player1 choose ${chooses[0]} so player 1 wins`
+    } 
+       else if(player1==chooses[1] && player2==chooses[2] ){
+        document.getElementById('result').innerHTML=`player 1 choose ${chooses[1]}  
+        and player2 choose ${chooses[2]} so player 2 wins`
+    } 
+       else if(player1==chooses[2] && player2==chooses[1] ){
+        document.getElementById('result').innerHTML=`player 1 choose ${chooses[2]}  
+        and player2 choose ${chooses[1]} so player 2 wins`
+    } 
+       else if(player1==chooses[0] && player2==chooses[2] ){
+        document.getElementById('result').innerHTML=`player 2 choose ${chooses[2]}  
+        and player1 choose ${chooses[0]} so player 1 wins`
+    }  
+       else if(player1==chooses[2] && player2==chooses[0] ){
+        document.getElementById('result').innerHTML=`player 2 choose ${chooses[0]}  
+        and player2 choose ${chooses[1]} so player 2 wins`
+    }  
+    
+</script>

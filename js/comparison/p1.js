@@ -1,0 +1,10 @@
+
+let obj1 = { name: "Alice" };//object data type
+let obj2 = { name: "Alice" };//object data type
+let a = 5
+let b = 5
+console.log(obj1 === obj2);       // false ❌ different references
+console.log(Object.is(obj1, obj2)); // false ❌
+console.log(Object.is(a, b)); // false ❌
+console.log(a === b); // false ❌
+
