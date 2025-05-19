@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1 id="result"></h1>
+    <h1 id="result2"></h1>
+</body>
+
+</html>
+
+<script>
+    let chooses=['stone','paper','scissor']
+    let rand_index=Math.trunc((Math.random()*3))
+    let rand_index2=Math.trunc((Math.random()*3))
+    let player1=chooses[rand_index]
+    let player2=chooses[rand_index2]
+    document.getElementById('result').innerHTML=rand_index+' '+rand_index2
+    document.getElementById('result2').innerHTML=player1+' '+player2
+</script>

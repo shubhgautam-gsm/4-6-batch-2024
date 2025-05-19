@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square and Approximate Square Root</title>
+</head>
+<body>
+  <h2 id="demo"></h2>
+  <h2 id="demo2"></h2>
+
+  <script>
+    function approxSqrt(n) {
+      if (n <= 0) return 0;
+      return (n / 2) + (1 / n); // simple approximation
+    }
+
+    let a = prompt('Enter a value');
+    a = Number(a);
+    let sqr = a * a;
+    let root = approxSqrt(a);
+
+    document.getElementById('demo').innerHTML = 'Square of ' + a + ' is ' + sqr;
+    document.getElementById('demo2').innerHTML = 'Approx. square root of ' + a + ' is ' + root;
+  </script>
+</body>
+</html>
