@@ -14,19 +14,21 @@
 
 <script>
 
-
-  function myAge(){
+function myAge() {
      let age=document.getElementById('age').value ;//get
-     if(isNaN(age)){
-        document.getElementById('demo').innerHTML='age is not a number';
+  
+    if(age<18){
+        document.getElementById('demo').innerHTML='u are under age'
+    }
+    else if(age>18){
+        document.getElementById('demo').innerHTML='u are above age'
+
     }
     else{
-      //short hand
-    document.getElementById('demo').innerHTML=(age<18)?'u are under age':'u are above age'
-     
+        document.getElementById('demo').innerHTML='age is not in value'
     }
-  }
     
+}
 </script>
 
 </body>
