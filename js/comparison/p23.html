@@ -7,14 +7,16 @@
 
 <p id="demo"></p>
 
-<script>
-const numbers = [45, 4, 9, 16, 25,66];
+<script>// x=     0, 1 , 2, 3, 4  (in)
+
+const numbers = [45, 4, 9, 16, 25,66];//array having two array(index,value)
+
 // (in) index (of) values
 // i.e (in). x=0, 1, 2, 3, 4  index 
 // i.e .(of) x= 45, 4, 9, 16, 25 values
 let txt = "";
-for (let x in numbers) {
-  txt += numbers[x] + "<br>"; 
+for (let x of numbers) {
+  txt += x + "<br>"; 
 }
 
 document.getElementById("demo").innerHTML = txt;

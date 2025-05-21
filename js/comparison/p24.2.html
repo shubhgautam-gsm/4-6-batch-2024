@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For In Loop</h2>
+<p>The for in statement loops through the properties of an object:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {fname:"John", lname:"Doe", age:25}; //object{key:value}  not having index
+// 1 way person.fname    2 way person['fname']  no like person[fname]
+let txt = "";
+  txt += person['age'] + " "+ person.fname;
+
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
