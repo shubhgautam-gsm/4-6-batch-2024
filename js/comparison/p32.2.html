@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript while Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let cars = [];//mummy
+let i = 0;//infinite
+let lt=prompt('enter numbers of cars which u want to enter:')// car (container) || value 'bmw'
+
+// while(condi)
+while (i <= lt) {
+  let car=prompt('enter car name:')// car (container) || value 'bmw'
+  cars.push(car) //divyang
+  console.log(i)
+  i++
+}
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>

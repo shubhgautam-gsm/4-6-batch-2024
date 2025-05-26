@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Iterables</h1>
+<h2>Make an Object Iterable</h2>
+<h3>not take loads because first all loop data add in text="" then update 1 time only on dom</h3>
+<p id="demo"></p>
+
+<script>
+// Create an Object
+myNumbers = {};
+
+// Make it Iterable
+myNumbers[Symbol.iterator] = function() {
+  let n = 0;
+  done = false;
+  return {
+    next() {
+      n += 10;
+      if (n == 11100) {done = true}
+      return {value:n, done:done};
+    }
+  };
+}
+
+let text = ""
+for (const num of myNumbers) {
+   text+= num +"<br>"
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>

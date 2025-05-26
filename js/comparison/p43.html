@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript break</h2>
+
+<p id="demo"></p>
+
+<script>
+outer: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    if (i + j === 3) break outer; // breaks the outer loop
+    document.getElementById('demo').innerHTML+=j    
+}
+}
+
+</script>
+
+</body>
+</html>

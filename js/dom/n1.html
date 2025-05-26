@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    </div>
+    <div>
+
+    </div>
+</body>
+<script>
+    const para=document.createElement('h3');//<H3></H3>
+    const node=document.createTextNode('HELLO TODAY IS THURSDAY')//HELLO TODAY IS THURSDAY
+    para.appendChild(node) //<h3>HELLO TODAY IS THURSDAY</h3>
+    const element =document.getElementById('div1')
+    element.appendChild(para) //<h3>HELLO TODAY IS THURSDAY</h3>
+
+</script>
+
+</html>
