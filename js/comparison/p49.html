@@ -16,21 +16,32 @@
         // Make it Iterable
         myNumbers[Symbol.iterator] = function () {
             let n = 0;
-            done = false;
+            stp= false;
             return {
                 next() {
                     n += 10;
-                    if (n == 11100) { done = true }
-                    return { value: n, done: done };
+                    if(n>120){stp=true}
+                    //if(n==120){stp=true}
+                    return { value: n, done: stp };
                 }
             };
         }
 
+       console.log(myNumbers())
+      
         for (const num of myNumbers) {
             document.getElementById("demo").innerHTML += num + '<br>';
+            console.log(num)
             
         }
-
+        let add=function (){
+            a=5
+            b=10
+            return a+b
+        }
+        console.log(add())
+        console.log(add())
+        console.log(add())
     </script>
 </body>
 

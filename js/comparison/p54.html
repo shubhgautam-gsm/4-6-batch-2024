@@ -3,15 +3,12 @@
 <body>
 <h1>JavaScript Iterables</h1>
 <h2>Make an Object Iterable</h2>
-<h3>not take loads because first all loop data add in text="" then update 1 time only on dom</h3>
+
 <p id="demo"></p>
 
 <script>
 // Create an Object
-myNumbers = {
-  //value:20
-  
-};
+myNumbers = {};
 
 // Make it Iterable
 myNumbers[Symbol.iterator] = function() {
@@ -20,18 +17,25 @@ myNumbers[Symbol.iterator] = function() {
   return {
     next() {
       n += 10;
-      if (n == 300) {done = true}
+      if (2 == 100) {done = true}
       return {value:n, done:done};
     }
   };
 }
 
+// Create an Iterator
+let loop = myNumbers[Symbol.iterator]();
+let i=0
 let text = ""
-for (const num of myNumbers) {
-   text+= num +"<br>"
+while (true) {
+  if( loop.next().done) break
+    if(loop.next().value==100) break
+
+  console.log('a')
 }
 
 document.getElementById("demo").innerHTML = text;
 </script>
+
 </body>
 </html>
