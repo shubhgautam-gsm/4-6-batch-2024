@@ -1,0 +1,42 @@
+const a = { id: 1, name: "Apple" };
+const b = { id: 2, name: "Banana" };
+
+const student = new Map();
+student.set(a, "Student A");
+student.set(b, "Student B");
+
+// Access all keys
+for (const key of student.keys()) {
+  console.log("Key:", key);           // Logs the object key
+}
+
+// Access all values
+for (const value of student.values()) {
+  console.log("Value:", value);       // Logs the stored value
+}
+
+// Access both key and value
+for (const [key, value] of student.entries()) {
+  console.log("Key:", key, "Value:", value);
+}
+const a = { id: 1, name: "Apple" };
+const b = { id: 2, name: "Banana" };
+
+const student = new Map();
+student.set(a, "Student A");
+student.set(b, "Student B");
+
+// Access all keys
+for (const key of student.keys()) {
+  console.log("Key:", key);           // Logs the object key
+}
+
+// Access all values
+for (const value of student.values()) {
+  console.log("Value:", value);       // Logs the stored value
+}
+
+// Access both key and value
+for (const [key, value] of student.entries()) {
+  console.log("Key:", key, "Value:", value);
+}

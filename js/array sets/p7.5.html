@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Sets</h1>
+    <h2>The has() Method</h2>
+
+    <p>The has() method returns true if a set contains a spesific value:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let extn=['.jpg','.png','.gif']
+        user_image = prompt('enter  image name :')
+
+        if (user_image.includes(extn[0])||user_image.includes(extn[1])||user_image.includes(extn[2])) {
+            document.getElementById("demo").innerHTML = " view image ",user_image ;
+            console.log(user_image)
+
+        } else {
+            document.getElementById("demo").innerHTML = "not view image " ;
+        }
+    </script>
+
+</body>
+
+</html>

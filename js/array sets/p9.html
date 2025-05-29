@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Sets</h1>
+
+<p>The forEach() method </p>
+
+<p id="demo"></p>
+
+<script>
+// Create a new Set
+const letters = new Set(["a","b","c"]);
+let text="";
+let loop=letters.values()
+//loop=["a","b","c"]
+
+let data=""
+for (let x of loop) {
+    data+=x
+}
+document.getElementById('demo').innerHTML=data
+
+</script>
+
+</body>
+</html>

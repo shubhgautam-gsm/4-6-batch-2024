@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<p>Being able to use objects as keys is an important Map feature:</p>
+
+<p id="demo"></p>
+
+<script>
+const a = {id: 1};
+const b = {id: 1};
+
+const map = new Map();
+map.set(a, "First");
+map.set(b, "Second");
+
+console.log(map.get(a)); // "First"
+console.log(map.get(b)); // "Second"
+
+</script>
+
+</body>
+</html>
+

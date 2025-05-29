@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Sets</h1>
+    <h2>The has() Method</h2>
+
+    <p>The has() method returns true if a set contains a spesific value:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create a new Set
+        const letters = new Set(["mobile", "tv", "fridge"]);
+
+        // Does the Set contain "d"?
+        user = prompt('enter product category name :')
+
+        if (letters.has(user)) {
+            document.getElementById("demo").innerHTML = "category which u search is available " ;
+
+        } else {
+            document.getElementById("demo").innerHTML = "category which u search is not available" ;
+        }
+    </script>
+
+</body>
+
+</html>

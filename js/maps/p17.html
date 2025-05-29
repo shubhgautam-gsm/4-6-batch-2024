@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<p>Accessing Map with primitive keys (like id):</p>
+
+<p id="demo"></p>
+
+<script>
+  const a = {id: 1, name: "Apple"};
+  const b = {id: 2, name: "Banana"};
+
+  // Create Map
+  const student = new Map();
+
+  // Use id as key
+  student.set(a.id, "Student A");
+  student.set(b.id, "Student B");
+
+  // Now get by id
+  console.log(student.get(a.id)); // Output: "Student A"
+
+  // Show on page
+  document.getElementById("demo").innerHTML = student.get(a.id);
+</script>
+
+</body>
+</html>
