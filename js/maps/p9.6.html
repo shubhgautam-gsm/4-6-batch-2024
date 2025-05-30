@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The forEach() Method</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+// Map follows Order as we give
+const students = new Map([
+  [1, 500],
+  [2, 300],
+  [4,200],
+  [3,1200]
+]);
+
+// Object not follows Order as we give
+const students2={
+  1: 500,
+  2: 300,
+  4:200,
+  3:1200
+}
+
+let text = "";
+students.forEach (function(value, key) {
+  text += key + ' = ' + value + "<br>"
+})
+Object.entries(students2).forEach (function(value, key) {
+  text += key + ' = ' + value + "<br>"
+})
+console.log(students)
+console.log(students2)
+document.getElementById("demo").innerHTML = students;
+document.getElementById("demo2").innerHTML = students2;
+</script>
+
+</body>
+</html>

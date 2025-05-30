@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The forEach() Method</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200],
+  [2,2]
+]);
+
+// Create a Object
+const fruits2={
+  "apples": 500,
+  "bananas": 300,
+  "oranges":200,
+  2:2
+}
+
+let text = "";
+let text2= "";
+
+fruits.forEach (function(value, key) {
+  text += key + ' = ' + value + "<br>"
+})
+fruits2.forEach (function(value, key) {
+  text2 += key + ' = ' + value + "<br>"
+})
+
+console.log(fruits)
+console.log(fruits2)
+
+document.getElementById("demo").innerHTML = text;
+document.getElementById("demo2").innerHTML = text2;
+</script>
+
+</body>
+</html>

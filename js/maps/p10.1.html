@@ -8,15 +8,15 @@
 
 <script>
 // Create a Map
-const fruits = new Map([
-  ["apples", 500],
-  ["bananas", 300],
-  ["oranges", 200]
-]);
+const fruits ={
+  "apples": 500,
+  "bananas": 300,
+  "oranges": 200
+};
 
 let text = "";
-for (const x of fruits) {
-  text += x + "<br>";
+for (const x of Object.entries(fruits)) {
+  text += 'full details is '+ x + ' key is '+x[0]+' values is '+x[1]+"<br>";
 }
 
 document.getElementById("demo").innerHTML = text;
