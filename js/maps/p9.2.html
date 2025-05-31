@@ -10,7 +10,7 @@
 <script>
 // Create a Map
 const fruits = new Map([
-  ["apples", 500],
+  ["mpples", 500],
   ["bananas", 300],
   ["oranges", 200],
   [2,2]
@@ -18,7 +18,7 @@ const fruits = new Map([
 
 // Create a Object
 const fruits2={
-  "apples": 500,
+  "mpples": 500,
   "bananas": 300,
   "oranges":200,
   2:2
@@ -30,14 +30,17 @@ let text2= "";
 fruits.forEach (function(value, key) {
   text += key + ' = ' + value + "<br>"
 })
-fruits2.forEach (function(value, key) {
-  text2 += key + ' = ' + value + "<br>"
+//Object.entries(fruits2).forEach (function(value, key) {
+ // text2 += key + ' = ' + value + "<br>"
+//})
+Object.entries(fruits2).forEach (function(values) {
+  text2 += values[0] + ' = ' + values[1] + "<br>"
 })
-
 console.log(fruits)
 console.log(fruits2)
 
-document.getElementById("demo").innerHTML = text;
+document.getElementById("demo2").innerHTML = text2;
+
 document.getElementById("demo2").innerHTML = text2;
 </script>
 
