@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="demo"></h2>
+</body>
+<script>
+    let fruits = [
+        { name: "apples", quantity: 300 },
+        { name: "bananas", quantity: 500 },
+        { name: "oranges", quantity: 200 },
+        { name: "kiwi", quantity: 150 }
+    ]
+
+    function qtGrouping({quantity}){
+        return quantity >200?"yes":"no"
+    }
+    const result= Map.groupBy(fruits, qtGrouping)
+
+    text="greater than 200:<br> "
+    for(let g of result.get('yes')){
+        text +="<br>"+ g.name + " = " + g.quantity 
+    }
+       text+="<br><hr>lower than 200:<br> "
+    for(let l of result.get('no')){
+        text +="<br>"+ l.name + " = " + l.quantity 
+    }
+    document.getElementById('demo').innerHTML=text
+
+
+</script>
+
+</html>

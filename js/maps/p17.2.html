@@ -15,15 +15,14 @@ obj={
 }
   // Create Map
   //in Map key as
-  const student = new Map();
-
-  // Use id as key
-  student.set(a.id, "Student A");
-  student.set(b.id, "Student B");
+  const student = new Map([
+  [a.id, "Student A"],
+  [b.id, "Student B"],
+  ]);
 
   // Now get by id
   console.log(obj.id); // Output: "Student A"
-  console.log(student.get(b.id)); // Output: "Student A"
+  console.log(student.get(a.id)); // Output: "Student A"
 
   // Show on page
 </script>
