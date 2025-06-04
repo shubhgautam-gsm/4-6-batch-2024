@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+</body>
+<script>
+    const car={
+        name:"Toyota",
+        model:"Camry",
+    }
+    //destructring
+    const {name,model}  = car
+
+    //const name=car.name
+    //const model=car.model
+
+
+    //name='Toyata'
+    //model='Camry'
+
+    document.getElementById('demo').innerHTML=`Name is ${name} and
+     Model is ${model}`
+</script>
+</html>

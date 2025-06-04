@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+</body>
+<script>
+    let fruits=['apple', 'banana', 'cherry', 'date', 'elderberry'];
+
+    let [fruit1,fruit2,...fruit3]=fruits    
+    document.getElementById("demo").innerHTML = `The first fruit is ${fruit1} and
+     the second  fruit is ${fruit2}
+     and the third fruit is ${fruit3}`
+
+</script>
+</html>
