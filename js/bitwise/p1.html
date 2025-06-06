@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bitwise AND Visual Comparison</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      margin: 40px;
+    }
+    input {
+      padding: 6px;
+      width: 120px;
+      margin: 5px;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 10px 0;
+    }
+    .result {
+      margin-top: 20px;
+    }
+    .bit-row {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .bit1, .bit2, .bitResult {
+      display: inline-block;
+      width: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Bitwise AND - Bit-by-Bit Comparison</h2>
+
+  <label>Number A:</label><br>
+  <input type="number" id="num1"><br>
+
+  <label>Number B:</label><br>
+  <input type="number" id="num2"><br>
+
+  <button onclick="bitwiseCompare()">Compare Bits</button>
+
+  <div id="output" class="result"></div>
+
+  <script>
+    function bitwiseCompare() {
+      const num1 = parseInt(document.getElementById('num1').value);
+      const num2 = parseInt(document.getElementById('num2').value);
+      const outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = '';
+
+      if (isNaN(num1) || isNaN(num2)) {
+        outputDiv.innerHTML = "❌ Please enter valid numbers.";
+        return;
+      }
+
+      // Convert to binary strings and pad to same length
+      const bin1 = num1.toString(2);
+      const bin2 = num2.toString(2);
+      const maxLen = Math.max(bin1.length, bin2.length);
+      const binA = bin1.padStart(maxLen, '0');
+      const binB = bin2.padStart(maxLen, '0');
+
+      let resultBits = '';
+      let bitHtml = '';
+
+      for (let i = 0; i < maxLen; i++) {
+        const bitA = binA[i];
+        const bitB = binB[i];
+        const bitAnd = bitA === '1' && bitB === '1' ? '1' : '0';
+        resultBits += bitAnd;
+
+        bitHtml += `
+          <div class="bit-row">
+            <span class="label">A:</span> <span class="bit1">${bitA}</span>
+            <span class="label">B:</span> <span class="bit2">${bitB}</span>
+            <span class="label">A & B:</span> <span class="bitResult">${bitAnd}</span>
+          </div>
+        `;
+      }
+
+      const resultDecimal = num1 & num2;
+
+      outputDiv.innerHTML = `
+        <div class="bit-row"><strong>Binary Comparison:</strong></div>
+        ${bitHtml}
+        <div class="bit-row"><strong>Final AND Result:</strong> ${resultBits} (Binary), ${resultDecimal} (Decimal)</div>
+      `;
+    }
+    //-8 in binary (8 bits): 11111000
+    //Right shift by 2:      11111110  → which is -2
+    // when number negative then add 1 (if shift 1) 11(if shift 2)
+    //right shift
+  </script>
+
+</body>
+</html>
