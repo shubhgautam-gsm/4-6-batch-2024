@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>Search a string for "w3Schools", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+let divyang = "I HAVE IPHONE,ROLSROYAL ,HELICOPTER , SUBMARINE ,samsung,activa"; 
+let reporter=prompt('reporter think Divyang Have?') //SAMSUNG == samsung
+
+if(divyang.includes(reporter.toUpperCase())){
+ document.getElementById("demo").innerHTML ='TRUE';
+}
+else if(divyang.includes(reporter.toLowerCase())){ // 'SAMSUNG'.ToLowerCase()   samsung==samsung 
+    document.getElementById("demo").innerHTML = 'TRUE';
+}
+else{
+    document.getElementById("demo").innerHTML = 'FALSE';
+}
+
+
+</script>
+
+</body>
+</html>
+
