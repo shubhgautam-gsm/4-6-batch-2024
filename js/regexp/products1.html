@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id=demo></h1>
+</body>
+<script>
+    products = ['iphone12', 'tv', 'mobile', 'ipad', 'icard', 'earphone', 'ic', 'ai', 'microphone']
+    let user = prompt('find?')
+    for (x in products) {
+        if (products[x].match(new RegExp("^" + user))) {
+            document.getElementById('demo').innerHTML += products[x] + '<br>'
+        }
+    }
+</script>
+
+</html>

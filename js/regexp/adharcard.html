@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aadhaar Card Input</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+    }
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+    .success {
+      color: green;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Aadhaar Card Input Form</h2>
+  
+  <form id="aadhaarForm">
+    <label for="aadhaar">Enter Aadhaar Number:</label>
+    <input type="text" id="aadhaar" maxlength="14" placeholder="XXXX XXXX XXXX" />
+    <div id="message"></div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('aadhaarForm');
+    const aadhaarInput = document.getElementById('aadhaar');
+    const message = document.getElementById('message');
+
+    // Aadhaar format: either 12 digits or 4-digit groups (XXXX XXXX XXXX)
+    const aadhaarRegex = /^(\d{4}\s\d{4}\s\d{4}|\d{12})$/;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const aadhaar = aadhaarInput.value.trim();
+
+      if (aadhaarRegex.test(aadhaar)) {
+        message.textContent = "Aadhaar number is valid.";
+        message.className = "success";
+      } else {
+        message.textContent = "Invalid Aadhaar number. Must be 12 digits or formatted as XXXX XXXX XXXX.";
+        message.className = "error";
+      }
+    });
+
+    // Auto format: insert space after every 4 digits
+    aadhaarInput.addEventListener('input', function(e) {
+      let value = aadhaarInput.value.replace(/\D/g, '').slice(0, 12);
+      value = value.replace(/(\d{4})(\d{0,4})(\d{0,4})/, function(_, p1, p2, p3) {
+        return [p1, p2, p3].filter(Boolean).join(' ');
+      });
+      
+      aadhaarInput.value = value;
+    });
+  </script>
+</body>
+</html>
